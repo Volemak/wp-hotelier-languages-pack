@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Hotelier\n"
-"Report-Msgid-Bugs-To: http://wphotelier.com\n"
+"Report-Msgid-Bugs-To: https://github.com/easy-wp-hotelier/wp-hotelier\n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
@@ -18,7 +18,7 @@ msgstr ""
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.12\n"
+"X-Generator: Poedit 2.0.1\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
@@ -30,19 +30,1084 @@ msgstr ""
 msgid "Cheatin&#8217; huh?"
 msgstr "Stai barando eh?"
 
-#: ../includes/admin/calendar/views/html-admin-calendar.php:21
-msgid "Booking calendar"
-msgstr "Calendario prenotazioni"
+#: ../includes/class-htl-booking.php:160,
+#: ../includes/class-htl-booking.php:171,
+#: ../includes/class-htl-booking.php:177,
+#: ../includes/class-htl-booking.php:198,
+#: ../includes/class-htl-booking.php:216,
+#: ../includes/admin/new-reservation/class-htl-admin-new-reservation.php:321,
+#: ../includes/admin/new-reservation/class-htl-admin-new-reservation.php:327,
+#: ../includes/admin/new-reservation/class-htl-admin-new-reservation.php:343,
+#: ../includes/admin/new-reservation/class-htl-admin-new-reservation.php:361
+msgid "Error %d: Unable to create reservation. Please try again."
+msgstr "Errore %d: Impossibile creare prenotazione. Riprova."
 
-#: ../includes/admin/calendar/views/html-admin-calendar.php:69
-msgid "Today"
-msgstr "Oggi"
+#: ../includes/class-htl-booking.php:263,
+#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:43
+msgid "First name"
+msgstr "Nome"
 
-#: ../includes/admin/calendar/views/html-admin-calendar.php:77
-msgid "Go to date"
-msgstr "Vai alla data"
+#: ../includes/class-htl-booking.php:264
+msgctxt "placeholder"
+msgid "First name"
+msgstr "Nome"
 
-#: ../includes/admin/class-htl-admin-menus.php:35,
+#: ../includes/class-htl-booking.php:269,
+#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:47
+msgid "Last name"
+msgstr "Cognome"
+
+#: ../includes/class-htl-booking.php:270
+msgctxt "placeholder"
+msgid "Last name"
+msgstr "Cognome"
+
+#: ../includes/class-htl-booking.php:276,
+#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:52
+msgid "Email address"
+msgstr "Indirizzo email"
+
+#: ../includes/class-htl-booking.php:277
+msgctxt "placeholder"
+msgid "Email address"
+msgstr "Indirizzo email"
+
+#: ../includes/class-htl-booking.php:284, ../includes/class-htl-emails.php:257,
+#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:57,
+#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:260
+msgid "Telephone"
+msgstr "Telefono"
+
+#: ../includes/class-htl-booking.php:285
+msgctxt "placeholder"
+msgid "Telephone"
+msgstr "Telefono"
+
+#: ../includes/class-htl-booking.php:292,
+#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:79
+msgid "Country"
+msgstr "Stato"
+
+#: ../includes/class-htl-booking.php:293
+msgctxt "placeholder"
+msgid "Country"
+msgstr "Stato"
+
+#: ../includes/class-htl-booking.php:298,
+#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:246
+msgid "Address"
+msgstr "Indirizzo"
+
+#: ../includes/class-htl-booking.php:299
+msgctxt "placeholder"
+msgid "Street address"
+msgstr "Via/Piazza/Strada"
+
+#: ../includes/class-htl-booking.php:304
+msgctxt "placeholder"
+msgid "Apartment, suite, unit etc. (optional)"
+msgstr "Appartamento, suite, unità ecc (opzionale)"
+
+#: ../includes/class-htl-booking.php:309,
+#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:69
+msgid "Town / City"
+msgstr "Città"
+
+#: ../includes/class-htl-booking.php:310
+msgctxt "placeholder"
+msgid "Town / City"
+msgstr "Città"
+
+#: ../includes/class-htl-booking.php:315,
+#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:76
+msgid "State / County"
+msgstr "Provincia"
+
+#: ../includes/class-htl-booking.php:316
+msgctxt "placeholder"
+msgid "State / County"
+msgstr "Provincia"
+
+#: ../includes/class-htl-booking.php:321,
+#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:72
+msgid "Postcode / Zip"
+msgstr "C.A.P. / Codice Postale"
+
+#: ../includes/class-htl-booking.php:322
+msgctxt "placeholder"
+msgid "Postcode / Zip"
+msgstr "C.A.P. / Codice Postale"
+
+#: ../includes/class-htl-booking.php:335
+msgid "Your estimated time of arrival"
+msgstr "Arrivo previsto stimato"
+
+#: ../includes/class-htl-booking.php:336
+msgid "Time is for %s time zone"
+msgstr "Orario relativo al fuso orario di %s"
+
+#: ../includes/class-htl-booking.php:341,
+#: ../includes/class-htl-reservation.php:227,
+#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:96,
+#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:315
+msgid "I don't know"
+msgstr "Non lo so"
+
+#: ../includes/class-htl-booking.php:369, ../includes/class-htl-emails.php:219,
+#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:302,
+#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:348
+msgid "Special requests"
+msgstr "Richieste speciali"
+
+#: ../includes/class-htl-booking.php:372
+msgid ""
+"Special requests cannot be guaranteed but we will do our best to meet your "
+"needs."
+msgstr ""
+"Le richieste speciali non possono essere garantite, ma faremo del nostro "
+"meglio per soddisfare le vostre esigenze."
+
+#: ../includes/class-htl-booking.php:412
+msgid "Book now & pay deposit"
+msgstr "Prenota ora & paga il deposito"
+
+#: ../includes/class-htl-booking.php:416,
+#: ../templates/room-list/content/add-to-cart.php:44,
+#: ../templates/room-list/content/rate/rate-add-to-cart.php:42
+msgid "Book now"
+msgstr "Prenota ora"
+
+#: ../includes/class-htl-booking.php:422
+msgid "Send request"
+msgstr "Invia richiesta"
+
+#: ../includes/class-htl-booking.php:492,
+#: ../includes/class-htl-form-functions.php:129,
+#: ../includes/class-htl-form-functions.php:176,
+#: ../includes/admin/new-reservation/class-htl-admin-new-reservation.php:91
+msgid "We were unable to process your reservation, please try again."
+msgstr ""
+"Non siamo stati in grado di elaborare la prenotazione, si prega di riprovare."
+
+#: ../includes/class-htl-booking.php:505
+msgid ""
+"Sorry, your session has expired. <a href=\"%s\" class=\"htl-backward"
+"\">Return to homepage</a>"
+msgstr ""
+"Spiacenti, la tua sessione è scaduta. <a href=“%s” class=“htl-"
+"backward”>Torna alla homepage</a>"
+
+#: ../includes/class-htl-booking.php:548
+msgid "is a required field."
+msgstr "è un campo richiesto."
+
+#: ../includes/class-htl-booking.php:558
+msgid "is not a valid email address."
+msgstr "non è un indirizzo di posta elettronica valido."
+
+#: ../includes/class-htl-booking.php:565
+msgid "is not a valid number."
+msgstr "non è un numero valido."
+
+#: ../includes/class-htl-booking.php:574
+msgid "is not a valid phone number."
+msgstr "non è un numero di telefono valido."
+
+#: ../includes/class-htl-booking.php:587,
+#: ../includes/class-htl-form-functions.php:82
+msgid "You must accept our Terms &amp; Conditions."
+msgstr "Devia accettare i nostri Termini & Condizioni."
+
+#: ../includes/class-htl-booking.php:598,
+#: ../includes/class-htl-form-functions.php:76
+msgid "Invalid payment method."
+msgstr "Metodo di pagamento non valido."
+
+#: ../includes/class-htl-booking.php:617
+msgid "List of available rooms <a href=\"%s\">here</a>"
+msgstr "Elenco delle camere disponibili <a href=\"%s\">qui</a>"
+
+#: ../includes/class-htl-cart.php:117
+msgid "Get cart should not be called before the wp_loaded action."
+msgstr "Get cart non deve essere richiamata prima dell'azione wp_loaded."
+
+#: ../includes/class-htl-cart.php:182, ../includes/class-htl-cart.php:521
+msgid ""
+"%s has been removed from your cart because it can no longer be reserved. "
+"Please contact us if you need assistance."
+msgstr ""
+"%s è stata rimossa dal tuo carrello perché non può più essere prenotata. Per "
+"favore contattaci se vuoi assistenza."
+
+#: ../includes/class-htl-cart.php:269, ../includes/class-htl-cart.php:294,
+#: ../includes/admin/new-reservation/class-htl-admin-new-reservation.php:127,
+#: ../includes/admin/new-reservation/class-htl-admin-new-reservation.php:178
+msgid "Sorry, this room is not available on the given dates."
+msgstr "Siamo spiacenti, questa camera non è disponibile nelle date indicate."
+
+#: ../includes/class-htl-cart.php:277, ../includes/class-htl-cart.php:302,
+#: ../includes/class-htl-cart.php:323, ../includes/class-htl-cart.php:327,
+#: ../includes/admin/new-reservation/class-htl-admin-new-reservation.php:168,
+#: ../includes/admin/new-reservation/class-htl-admin-new-reservation.php:186,
+#: ../includes/admin/new-reservation/class-htl-admin-new-reservation.php:207,
+#: ../includes/admin/new-reservation/class-htl-admin-new-reservation.php:211
+msgid "Sorry, this room does not exists."
+msgstr "Siamo spiacenti, questa camera non esiste."
+
+#: ../includes/class-htl-cart.php:408, ../includes/class-htl-cart.php:563,
+#: ../includes/admin/new-reservation/class-htl-admin-new-reservation.php:265
+msgid "Sorry, this room cannot be reserved."
+msgstr "Siamo spiacenti, questa camera non può essere prenotata."
+
+#: ../includes/class-htl-cart.php:542
+msgid ""
+"Sorry, we do not have enough \"%s\" available to fulfill your reservation. "
+"Please select another room or reduce the quantity and try again. We "
+"apologise for any inconvenience caused."
+msgstr ""
+"Siamo spiacenti, non abbiamo abbastanza \"%s\" disponibili per soddisfare la "
+"vostra prenotazione. Si prega di selezionare un'altra stanza o di ridurre la "
+"quantità e riprovare. Ci scusiamo per gli eventuali disagi causati."
+
+#: ../includes/class-htl-emails.php:220,
+#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:303,
+#: ../templates/reservation/reservation-details.php:41
+msgid "None"
+msgstr "Nessuno"
+
+#: ../includes/class-htl-emails.php:243
+msgid "Name"
+msgstr "Nome"
+
+#: ../includes/class-htl-emails.php:250,
+#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:253
+msgid "Email"
+msgstr "Email"
+
+#: ../includes/class-htl-emails.php:266,
+#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:235,
+#: ../includes/admin/new-reservation/views/html-admin-new-reservation.php:71,
+#: ../templates/booking/form-guest-details.php:21,
+#: ../templates/emails/email-guest-details.php:19,
+#: ../templates/reservation/guest-details.php:21
+msgid "Guest details"
+msgstr "Dati ospite"
+
+#: ../includes/class-htl-emails.php:266
+msgid "Your details"
+msgstr "I tuoi dettagli"
+
+#: ../includes/class-htl-form-functions.php:163
+msgid "Please select at least one room."
+msgstr "Seleziona almeno una stanza."
+
+#: ../includes/class-htl-form-functions.php:282
+msgid "Reservation already cancelled."
+msgstr "Prenotazione già annullata."
+
+#: ../includes/class-htl-form-functions.php:285
+msgid ""
+"Your reservation includes a non cancellable and non refundable room and it "
+"cannot be cancelled."
+msgstr ""
+"La tua prenotazione include una camera non cancellabile e non rimborsabile e "
+"non può essere annullata."
+
+#: ../includes/class-htl-form-functions.php:289
+msgid "Reservation cancelled by guest."
+msgstr "Prenotazione annullata dall'ospite."
+
+#: ../includes/class-htl-form-functions.php:292
+msgid "Your reservation has been cancelled."
+msgstr "La tua prenotazione è stata annullata."
+
+#: ../includes/class-htl-form-functions.php:297
+msgid ""
+"Your reservation can no longer be cancelled. Please contact us if you need "
+"assistance."
+msgstr ""
+"La tua prenotazione non può più essere annullata. Contattaci se hai bisogno "
+"di assistenza."
+
+#: ../includes/class-htl-form-functions.php:299,
+#: ../includes/shortcodes/class-htl-shortcode-booking.php:119,
+#: ../templates/booking/received.php:51
+msgid "Invalid reservation."
+msgstr "Prenotazione non valida."
+
+#: ../includes/class-htl-frontend-scripts.php:117
+msgctxt "datepicker_selected"
+msgid "Your stay:"
+msgstr "Il vostro soggiorno:"
+
+#: ../includes/class-htl-frontend-scripts.php:118
+msgctxt "datepicker_night"
+msgid "Night"
+msgstr "Notte"
+
+#: ../includes/class-htl-frontend-scripts.php:119
+msgctxt "datepicker_nights"
+msgid "Nights"
+msgstr "Notti"
+
+#: ../includes/class-htl-frontend-scripts.php:120
+msgctxt "datepicker_apply"
+msgid "Close"
+msgstr "Chiudi"
+
+#: ../includes/class-htl-frontend-scripts.php:124
+msgctxt "datepicker_error_more"
+msgid "Date range should not be more than 1 night"
+msgstr "L'intervallo di date non dovrebbe essere più di 1 notte"
+
+#: ../includes/class-htl-frontend-scripts.php:125
+msgctxt "datepicker_error_more_plural"
+msgid "Date range should not be more than %d nights"
+msgstr "L'intervallo di date non dovrebbe essere più di %d notti"
+
+#: ../includes/class-htl-frontend-scripts.php:126
+msgctxt "datepicker_error_less"
+msgid "Date range should not be less than 1 night"
+msgstr "L'intervallo di date non dovrebbe essere meno di 1 notte"
+
+#: ../includes/class-htl-frontend-scripts.php:127
+msgctxt "datepicker_error_less_plural"
+msgid "Date range should not be less than %d nights"
+msgstr "L'intervallo di date non dovrebbe essere meno di %d notti"
+
+#: ../includes/class-htl-frontend-scripts.php:128
+msgctxt "datepicker_info_more"
+msgid "Please select a date range longer than 1 night"
+msgstr "Si prega di selezionare un intervallo di date più lungo di 1 notte"
+
+#: ../includes/class-htl-frontend-scripts.php:129
+msgctxt "datepicker_info_more_plural"
+msgid "Please select a date range longer than %d nights"
+msgstr "Si prega di selezionare un intervallo di date più lungo di %d notti"
+
+#: ../includes/class-htl-frontend-scripts.php:130
+msgctxt "datepicker_info_range"
+msgid "Please select a date range between %d and %d nights"
+msgstr "Si prega di selezionare un intervallo di date tra %d e %d notti"
+
+#: ../includes/class-htl-frontend-scripts.php:131
+msgctxt "datepicker_info_default"
+msgid "Please select a date range"
+msgstr "Seleziona un intervallo di date"
+
+#: ../includes/class-htl-info.php:148
+msgid "Pets are not allowed."
+msgstr "Gli animali non sono ammessi."
+
+#: ../includes/class-htl-install.php:192
+msgctxt "Page slug"
+msgid "available-rooms"
+msgstr "camere-disponibili"
+
+#: ../includes/class-htl-install.php:193
+msgctxt "Page title"
+msgid "Available rooms"
+msgstr "Camere disponibili"
+
+#: ../includes/class-htl-install.php:197
+msgctxt "Page slug"
+msgid "booking"
+msgstr "prenotazione"
+
+#: ../includes/class-htl-install.php:198
+msgctxt "Page title"
+msgid "Booking"
+msgstr "Prenotazione"
+
+#: ../includes/class-htl-install.php:238
+msgid "View Hotelier settings"
+msgstr "Visualizza impostazioni Hotelier"
+
+#: ../includes/class-htl-install.php:238,
+#: ../includes/admin/settings/class-htl-admin-settings.php:67
+msgid "Settings"
+msgstr "Impostazioni"
+
+#: ../includes/class-htl-install.php:254
+msgid "View Easy WP Hotelier documentation"
+msgstr "Visualizza documentazione Easy WP Hotelier"
+
+#: ../includes/class-htl-install.php:254
+msgid "Docs"
+msgstr "Documentazione"
+
+#: ../includes/class-htl-payment-gateways.php:98
+msgid "Paypal Standard"
+msgstr "PayPal Standard"
+
+#: ../includes/class-htl-post-types.php:48
+msgctxt "room post type name"
+msgid "Rooms"
+msgstr "Camere"
+
+#: ../includes/class-htl-post-types.php:49
+msgctxt "singular room post type name"
+msgid "Room"
+msgstr "Camera"
+
+#: ../includes/class-htl-post-types.php:50
+msgid "Add New"
+msgstr "Aggiungi nuovo"
+
+#: ../includes/class-htl-post-types.php:51
+msgid "Add New Room"
+msgstr "Aggiungi nuova camera"
+
+#: ../includes/class-htl-post-types.php:52
+msgid "Edit Room"
+msgstr "Modifica camera"
+
+#: ../includes/class-htl-post-types.php:53
+msgid "New Room"
+msgstr "Nuova camera"
+
+#: ../includes/class-htl-post-types.php:54
+msgid "All Rooms"
+msgstr "Tutte le camere"
+
+#: ../includes/class-htl-post-types.php:55
+msgid "View Room"
+msgstr "Vedi camera"
+
+#: ../includes/class-htl-post-types.php:56
+msgid "Search Rooms"
+msgstr "Cerca camere"
+
+#: ../includes/class-htl-post-types.php:57
+msgid "No Rooms found"
+msgstr "Nessuna camera trovata"
+
+#: ../includes/class-htl-post-types.php:58
+msgid "No Rooms found in Trash"
+msgstr "Nessuna camera nel cestino"
+
+#: ../includes/class-htl-post-types.php:60
+msgctxt "room post type menu name"
+msgid "Rooms"
+msgstr "Camere"
+
+#: ../includes/class-htl-post-types.php:82
+msgctxt "post type general name"
+msgid "Reservations"
+msgstr "Prenotazioni"
+
+#: ../includes/class-htl-post-types.php:83
+msgctxt "post type singular name"
+msgid "Reservation"
+msgstr "Prenotazione"
+
+#: ../includes/class-htl-post-types.php:84,
+#: ../includes/admin/class-htl-admin-menus.php:42
+msgid "Add Reservation"
+msgstr "Aggiungi prenotazione"
+
+#: ../includes/class-htl-post-types.php:85,
+#: ../includes/admin/class-htl-admin-menus.php:42
+msgid "Add New Reservation"
+msgstr "Aggiungi nuova prenotazione"
+
+#: ../includes/class-htl-post-types.php:86
+msgid "Edit"
+msgstr "Modifica"
+
+#: ../includes/class-htl-post-types.php:87
+msgid "Edit Reservation"
+msgstr "Modifica prenotazione"
+
+#: ../includes/class-htl-post-types.php:88
+msgid "New Reservation"
+msgstr "Nuova prenotazione"
+
+#: ../includes/class-htl-post-types.php:89,
+#: ../includes/class-htl-post-types.php:90
+msgid "View Reservation"
+msgstr "Visualizza prenotazione"
+
+#: ../includes/class-htl-post-types.php:91
+msgid "Search Reservations"
+msgstr "Cerca prenotazioni"
+
+#: ../includes/class-htl-post-types.php:92
+msgid "No Reservations found"
+msgstr "Nessuna prenotazione trovata"
+
+#: ../includes/class-htl-post-types.php:93
+msgid "No Reservations found in Trash"
+msgstr "Nessuna prenotazione nel cestino"
+
+#: ../includes/class-htl-post-types.php:94
+msgid "Parent Reservation"
+msgstr "Prenotazione genitore"
+
+#: ../includes/class-htl-post-types.php:95
+msgctxt "admin menu name"
+msgid "Reservations"
+msgstr "Prenotazioni"
+
+#: ../includes/class-htl-post-types.php:100
+msgid "This is where hotel reservations are stored."
+msgstr "Il luogo in cui vengono salvate le prenotazioni dell'hotel."
+
+#: ../includes/class-htl-post-types.php:128
+msgctxt "Reservation status"
+msgid "Pending Payment"
+msgstr "In attesa di pagamento"
+
+#: ../includes/class-htl-post-types.php:133
+msgid "Pending Payment <span class=\"count\">(%s)</span>"
+msgid_plural "Pending Payment <span class=\"count\">(%s)</span>"
+msgstr[0] "In attesa di pagamento <span class=\"count\">(%s)</span>"
+msgstr[1] "In attesa di pagamento <span class=\"count\">(%s)</span>"
+
+#: ../includes/class-htl-post-types.php:136,
+#: ../includes/htl-reservation-functions.php:119
+msgctxt "Reservation status"
+msgid "On Hold"
+msgstr "In attesa"
+
+#: ../includes/class-htl-post-types.php:141
+msgid "On Hold <span class=\"count\">(%s)</span>"
+msgid_plural "On Hold <span class=\"count\">(%s)</span>"
+msgstr[0] "In attesa <span class=\"count\">(%s)</span>"
+msgstr[1] "In attesa <span class=\"count\">(%s)</span>"
+
+#: ../includes/class-htl-post-types.php:144,
+#: ../includes/htl-reservation-functions.php:117
+msgctxt "Reservation status"
+msgid "Confirmed"
+msgstr "Confermata"
+
+#: ../includes/class-htl-post-types.php:149
+msgid "Confirmed <span class=\"count\">(%s)</span>"
+msgid_plural "Confirmed <span class=\"count\">(%s)</span>"
+msgstr[0] "Confermata <span class=\"count\">(%s)</span>"
+msgstr[1] "Confermate <span class=\"count\">(%s)</span>"
+
+#: ../includes/class-htl-post-types.php:152,
+#: ../includes/htl-reservation-functions.php:116
+msgctxt "Reservation status"
+msgid "Completed"
+msgstr "Completata"
+
+#: ../includes/class-htl-post-types.php:157
+msgid "Completed <span class=\"count\">(%s)</span>"
+msgid_plural "Completed <span class=\"count\">(%s)</span>"
+msgstr[0] "Completata <span class=\"count\">(%s)</span>"
+msgstr[1] "Completate <span class=\"count\">(%s)</span>"
+
+#: ../includes/class-htl-post-types.php:160,
+#: ../includes/htl-reservation-functions.php:120
+msgctxt "Reservation status"
+msgid "Cancelled"
+msgstr "Cancellata"
+
+#: ../includes/class-htl-post-types.php:165
+msgid "Cancelled <span class=\"count\">(%s)</span>"
+msgid_plural "Cancelled <span class=\"count\">(%s)</span>"
+msgstr[0] "Cancellata <span class=“count”>(%s)</span>"
+msgstr[1] "Cancellate <span class=“count”>(%s)</span>"
+
+#: ../includes/class-htl-post-types.php:168,
+#: ../includes/htl-reservation-functions.php:121
+msgctxt "Reservation status"
+msgid "Failed"
+msgstr "Non riuscita"
+
+#: ../includes/class-htl-post-types.php:173
+msgid "Failed <span class=\"count\">(%s)</span>"
+msgid_plural "Failed <span class=\"count\">(%s)</span>"
+msgstr[0] "Non riuscita <span class=\"count\">(%s)</span>"
+msgstr[1] "Non riuscite <span class=\"count\">(%s)</span>"
+
+#: ../includes/class-htl-post-types.php:196
+msgid "Room Categories"
+msgstr "Categorie camere"
+
+#: ../includes/class-htl-post-types.php:197
+msgid "Room Category"
+msgstr "Categoria camera"
+
+#: ../includes/class-htl-post-types.php:198
+msgid "Categories"
+msgstr "Categorie"
+
+#: ../includes/class-htl-post-types.php:199
+msgid "Search Room Categories"
+msgstr "Ricerca categorie camere"
+
+#: ../includes/class-htl-post-types.php:200
+msgid "All Room Categories"
+msgstr "Tutte le categorie di camere"
+
+#: ../includes/class-htl-post-types.php:201
+msgid "Edit Room Category"
+msgstr "Modifica categoria camera"
+
+#: ../includes/class-htl-post-types.php:202
+msgid "Update Room Category"
+msgstr "Aggiorna categoria camera"
+
+#: ../includes/class-htl-post-types.php:203
+msgid "Add New Room Category"
+msgstr "Aggiungi nuova categoria camera"
+
+#: ../includes/class-htl-post-types.php:204
+msgid "New Room Category Name"
+msgstr "Nuovo nome categoria camera"
+
+#: ../includes/class-htl-post-types.php:224
+msgctxt "taxonomy general name"
+msgid "Rates"
+msgstr "Tariffe"
+
+#: ../includes/class-htl-post-types.php:225
+msgctxt "taxonomy singular name"
+msgid "Rate"
+msgstr "Tariffa"
+
+#: ../includes/class-htl-post-types.php:226
+msgctxt "admin menu name"
+msgid "Rates"
+msgstr "Tariffe"
+
+#: ../includes/class-htl-post-types.php:227
+msgid "Search Rates"
+msgstr "Ricerca tariffe"
+
+#: ../includes/class-htl-post-types.php:228
+msgid "All Rates"
+msgstr "Tutte le tariffe"
+
+#: ../includes/class-htl-post-types.php:229
+msgid "Edit Rate"
+msgstr "Modifica tariffa"
+
+#: ../includes/class-htl-post-types.php:230
+msgid "Update Rate"
+msgstr "Aggiorna tariffa"
+
+#: ../includes/class-htl-post-types.php:231
+msgid "Add New Rate"
+msgstr "Aggiungi nuova tariffa"
+
+#: ../includes/class-htl-post-types.php:232
+msgid "New Rate Name"
+msgstr "Nuovo nome tariffa"
+
+#: ../includes/class-htl-post-types.php:253
+msgctxt "taxonomy general name"
+msgid "Facilities"
+msgstr "Servizi"
+
+#: ../includes/class-htl-post-types.php:254
+msgctxt "taxonomy singular name"
+msgid "Facility"
+msgstr "Servizio"
+
+#: ../includes/class-htl-post-types.php:255
+msgctxt "admin menu name"
+msgid "Facilities"
+msgstr "Servizi"
+
+#: ../includes/class-htl-post-types.php:256
+msgid "Search Facilities"
+msgstr "Ricerca servizi"
+
+#: ../includes/class-htl-post-types.php:257
+msgid "All Facilities"
+msgstr "Tutti i servizi"
+
+#: ../includes/class-htl-post-types.php:258
+msgid "Edit Facility"
+msgstr "Modifica servizio"
+
+#: ../includes/class-htl-post-types.php:259
+msgid "Update Facility"
+msgstr "Aggiorna servizio"
+
+#: ../includes/class-htl-post-types.php:260
+msgid "Add New Facility"
+msgstr "Aggiungi nuovo servizio"
+
+#: ../includes/class-htl-post-types.php:261
+msgid "New Facility Name"
+msgstr "Nuovo nome servizio"
+
+#: ../includes/class-htl-post-types.php:288
+msgid "Room updated. <a href=\"%s\">View Room</a>"
+msgstr "Camera aggiornata. <a href=\"%s\">Vedi camera</a>"
+
+#: ../includes/class-htl-post-types.php:289,
+#: ../includes/class-htl-post-types.php:304
+msgid "Custom field updated."
+msgstr "Campo personalizzato aggiornato."
+
+#: ../includes/class-htl-post-types.php:290,
+#: ../includes/class-htl-post-types.php:305
+msgid "Custom field deleted."
+msgstr "Campo personalizzato cancellato."
+
+#: ../includes/class-htl-post-types.php:291
+msgid "Room updated."
+msgstr "Camera aggiornata."
+
+#: ../includes/class-htl-post-types.php:292
+msgid "Room restored to revision from %s"
+msgstr "Camera ripristinata a revisione da %s"
+
+#: ../includes/class-htl-post-types.php:293
+msgid "Room published. <a href=\"%s\">View Room</a>"
+msgstr "Camera pubblicata. <a href=\"%s\">Vedi camera</a>"
+
+#: ../includes/class-htl-post-types.php:294
+msgid "Room saved."
+msgstr "Camera salvata."
+
+#: ../includes/class-htl-post-types.php:295
+msgid "Room submitted. <a target=\"_blank\" href=\"%s\">Preview Room</a>"
+msgstr "Camera inserita. <a target=\"_blank\" href=\"%s\">Anteprima camera</a>"
+
+#: ../includes/class-htl-post-types.php:296
+msgid ""
+"Room scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s"
+"\">Preview Room</a>"
+msgstr ""
+"Camera pianificata per: <strong>%1$s</strong>. <a target=\"_blank\" href="
+"\"%2$s\">Anteprima camera</a>"
+
+#: ../includes/class-htl-post-types.php:297,
+#: ../includes/class-htl-post-types.php:312
+msgid "M j, Y @ G:i"
+msgstr "M j, Y @ G:i"
+
+#: ../includes/class-htl-post-types.php:298
+msgid "Room draft updated. <a target=\"_blank\" href=\"%s\">Preview Room</a>"
+msgstr ""
+"Bozza camera salvata. <a target=\"_blank\" href=\"%s\">Anteprima camera</a>"
+
+#: ../includes/class-htl-post-types.php:303,
+#: ../includes/class-htl-post-types.php:306,
+#: ../includes/class-htl-post-types.php:308
+msgid "Reservation updated."
+msgstr "Prenotazione aggiornata."
+
+#: ../includes/class-htl-post-types.php:307
+msgid "Reservation restored to revision from %s"
+msgstr "Prenotazione ripristinata a revisione da %s"
+
+#: ../includes/class-htl-post-types.php:309
+msgid "Reservation saved."
+msgstr "Prenotazione salvata."
+
+#: ../includes/class-htl-post-types.php:310
+msgid "Reservation submitted."
+msgstr "Prenotazione inserita."
+
+#: ../includes/class-htl-post-types.php:311
+msgid "Reservation scheduled for: <strong>%1$s</strong>."
+msgstr "Prenotazione pianificata per: <strong>%1$s</strong>."
+
+#: ../includes/class-htl-post-types.php:313
+msgid "Reservation draft updated."
+msgstr "Bozza prenotazione salvata."
+
+#: ../includes/class-htl-post-types.php:314
+msgid "Reservation updated and email sent."
+msgstr "Prenotazione aggiornata e email inviata."
+
+#: ../includes/class-htl-query.php:64,
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:263
+msgid "Pay reservation"
+msgstr "Paga la prenotazione"
+
+#: ../includes/class-htl-query.php:67,
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:256
+msgid "Reservation received"
+msgstr "Prenotazione ricevuta"
+
+#: ../includes/class-htl-reservation.php:333,
+#: ../includes/class-htl-reservation.php:339
+msgid "Hotelier"
+msgstr "Hotelier"
+
+#: ../includes/class-htl-reservation.php:376
+msgid ""
+"Error: Trying to change the status from %1$s to %2$s. %1$s reservations "
+"cannot be restored or modified."
+msgstr ""
+"Errore: tentativo di modificare lo stato da %1$s a %2$s. Prenotazioni %1$s "
+"non possono essere ripristinate o modificate."
+
+#: ../includes/class-htl-reservation.php:394
+msgid "Reservation status changed from %s to %s."
+msgstr "Stato prenotazione cambiato da %s a %s."
+
+#: ../includes/class-htl-reservation.php:842
+msgid "Subtotal:"
+msgstr "Totale parziale:"
+
+#: ../includes/class-htl-reservation.php:849
+msgid "Paid Deposit:"
+msgstr "Deposito versato:"
+
+#: ../includes/class-htl-reservation.php:856
+msgid "Required Deposit:"
+msgstr "Deposito richiesto:"
+
+#: ../includes/class-htl-reservation.php:863
+msgid "Payment Method:"
+msgstr "Metodo di pagamento:"
+
+#: ../includes/class-htl-reservation.php:871
+msgid "Total Due:"
+msgstr "Totale dovuto:"
+
+#: ../includes/class-htl-reservation.php:889,
+#: ../includes/class-htl-reservation.php:901,
+#: ../templates/booking/reservation-table.php:84,
+#: ../templates/booking/reservation-table.php:107
+msgid "Total:"
+msgstr "Totale:"
+
+#: ../includes/class-htl-reservation.php:894
+msgid "Deposit Due Now:"
+msgstr "Deposito dovuto ora:"
+
+#: ../includes/class-htl-roles.php:32
+msgid "Hotel Manager"
+msgstr "Amministratore Hotel"
+
+#: ../includes/class-htl-room-variation.php:346,
+#: ../includes/class-htl-room-variation.php:353,
+#: ../includes/class-htl-room.php:682, ../includes/class-htl-room.php:689
+msgctxt "price"
+msgid "Price: %s"
+msgstr "Prezzo: %s"
+
+#: ../includes/class-htl-room-variation.php:415,
+#: ../includes/class-htl-room-variation.php:427,
+#: ../includes/class-htl-room.php:775, ../includes/class-htl-room.php:809,
+#: ../includes/class-htl-room.php:824
+msgid "Rates from %s per night"
+msgstr "A partire da %s per notte"
+
+#: ../includes/class-htl-room-variation.php:440,
+#: ../includes/class-htl-room.php:842, ../includes/class-htl-room.php:844
+msgid "%s per night"
+msgstr "%s per notte"
+
+#: ../includes/class-htl-room.php:667
+msgctxt "min_price"
+msgid "From %s"
+msgstr "Da %s"
+
+#: ../includes/htl-cart-functions.php:25
+msgid "This room is protected and cannot be reserved."
+msgstr "Questa camera è protetta e non può essere prenotata."
+
+#: ../includes/htl-cart-functions.php:116
+msgid "Day"
+msgstr "Giorno"
+
+#: ../includes/htl-cart-functions.php:116,
+#: ../templates/booking/form-pay.php:25,
+#: ../templates/booking/reservation-table.php:31,
+#: ../templates/emails/admin-cancelled-reservation.php:60,
+#: ../templates/emails/admin-new-reservation.php:60,
+#: ../templates/emails/guest-cancelled-reservation.php:60,
+#: ../templates/emails/guest-confirmed-reservation.php:60,
+#: ../templates/emails/guest-invoice.php:70,
+#: ../templates/emails/guest-request-received.php:60,
+#: ../templates/reservation/reservation-table.php:31
+msgid "Cost"
+msgstr "Costo"
+
+#: ../includes/htl-price-functions.php:46
+msgid "US Dollars (&#36;)"
+msgstr "Dollari Americani (&#36;)"
+
+#: ../includes/htl-price-functions.php:47
+msgid "Euros (&euro;)"
+msgstr "Euro (&euro;)"
+
+#: ../includes/htl-price-functions.php:48
+msgid "Pounds Sterling (&pound;)"
+msgstr "Sterline Britanniche (&pound;)"
+
+#: ../includes/htl-price-functions.php:49
+msgid "Australian Dollars (&#36;)"
+msgstr "Dollari Australiani (&#36;)"
+
+#: ../includes/htl-price-functions.php:50
+msgid "Brazilian Real (R&#36;)"
+msgstr "Real Brasiliani (R&#36;)"
+
+#: ../includes/htl-price-functions.php:51
+msgid "Canadian Dollars (&#36;)"
+msgstr "Dollari Canadesi (&#36;)"
+
+#: ../includes/htl-price-functions.php:52
+msgid "Czech Koruna"
+msgstr "Corone Ceche"
+
+#: ../includes/htl-price-functions.php:53
+msgid "Danish Krone"
+msgstr "Corone Danesi"
+
+#: ../includes/htl-price-functions.php:54
+msgid "Hong Kong Dollar (&#36;)"
+msgstr "Dollari di Hong Kong (&#36;)"
+
+#: ../includes/htl-price-functions.php:55
+msgid "Hungarian Forint"
+msgstr "Fiorino Ungherese"
+
+#: ../includes/htl-price-functions.php:56
+msgid "Israeli Shekel (&#8362;)"
+msgstr "Shekel Israeliani (&#8362;)"
+
+#: ../includes/htl-price-functions.php:57
+msgid "Japanese Yen (&yen;)"
+msgstr "Yen Giapponesi (&yen;)"
+
+#: ../includes/htl-price-functions.php:58
+msgid "Malaysian Ringgits"
+msgstr "Ringgit Malesi"
+
+#: ../includes/htl-price-functions.php:59
+msgid "Mexican Peso (&#36;)"
+msgstr "Pesos Messicani (&#36;)"
+
+#: ../includes/htl-price-functions.php:60
+msgid "New Zealand Dollar (&#36;)"
+msgstr "Dollari Neozelandesi (&#36;)"
+
+#: ../includes/htl-price-functions.php:61
+msgid "Norwegian Krone"
+msgstr "Corone Norvegesi"
+
+#: ../includes/htl-price-functions.php:62
+msgid "Philippine Pesos"
+msgstr "Pesos Filippini"
+
+#: ../includes/htl-price-functions.php:63
+msgid "Polish Zloty"
+msgstr "Zloty Polacchi"
+
+#: ../includes/htl-price-functions.php:64
+msgid "Singapore Dollar (&#36;)"
+msgstr "Dollari di Singapore (&#36;)"
+
+#: ../includes/htl-price-functions.php:65
+msgid "Swedish Krona"
+msgstr "Corone Svedesi"
+
+#: ../includes/htl-price-functions.php:66
+msgid "Swiss Franc"
+msgstr "Franchi Svizzeri"
+
+#: ../includes/htl-price-functions.php:67
+msgid "Taiwan New Dollars"
+msgstr "Nuovi Dollari di Taiwan"
+
+#: ../includes/htl-price-functions.php:68
+msgid "Thai Baht (&#3647;)"
+msgstr "Baht Tailandesi"
+
+#: ../includes/htl-price-functions.php:69
+msgid "Indian Rupee (&#8377;)"
+msgstr "Rupie Indiane"
+
+#: ../includes/htl-price-functions.php:70
+msgid "Turkish Lira (&#8378;)"
+msgstr "Lire Turche (&#8378;)"
+
+#: ../includes/htl-price-functions.php:71
+msgid "Russian Rubles"
+msgstr "Rublo Russo"
+
+#: ../includes/htl-reservation-functions.php:61
+msgid "Invalid reservation status"
+msgstr "Stato di prenotazione non valido"
+
+#: ../includes/htl-reservation-functions.php:103
+msgid "Invalid reservation ID"
+msgstr "ID prenotazione non valido"
+
+#: ../includes/htl-reservation-functions.php:118
+msgctxt "Reservation status"
+msgid "Pending"
+msgstr "In sospeso"
+
+#: ../includes/htl-reservation-functions.php:360
+msgid "Time limit reached."
+msgstr "Raggiunto il limite di tempo"
+
+#: ../includes/htl-reservation-functions.php:396,
+#: ../includes/htl-reservation-functions.php:398
+msgid "Check-out date reached."
+msgstr "Data check-out raggiunta."
+
+#: ../includes/htl-room-functions.php:44
+msgid "Placeholder"
+msgstr "Segnaposto"
+
+#: ../includes/htl-room-functions.php:104
+msgid "Please check your dates."
+msgstr "Si prega di verificare le date."
+
+#: ../includes/htl-room-functions.php:565
+msgid "%s nights minimum stay and %s nights maximum stay"
+msgstr "Soggiorno minimo di %s notti e massimo %s notti"
+
+#: ../includes/htl-room-functions.php:567
+msgid "%s nights minimum stay"
+msgstr "Soggiorno minimo di %s notti"
+
+#: ../includes/htl-room-functions.php:569
+msgid "%s night maximum stay"
+msgid_plural "%s nights maximum stay"
+msgstr[0] "Soggiorno massimo di %s notte"
+msgstr[1] "Soggiorno massimo di %s notti"
+
+#: ../includes/htl-template-functions.php:219
+msgid "Search results for: \"%s\""
+msgstr "Cerca risultati per: \"%s\""
+
+#: ../includes/htl-template-functions.php:222
+msgid "&nbsp;&ndash; Page %s"
+msgstr "&nbsp;&ndash; Pagina %s"
+
+#: ../includes/htl-template-functions.php:230
+msgid "Rooms archive"
+msgstr "Archivio camere"
+
+#: ../includes/htl-template-functions.php:1160
+msgid "required"
+msgstr "richiesto"
+
+#: ../includes/admin/class-htl-admin-menus.php:49
+msgid "Calendar"
+msgstr "Calendario"
+
+#: ../includes/admin/class-htl-admin-menus.php:49
+msgid "View Calendar"
+msgstr "Visualizza calendario"
+
+#: ../includes/admin/class-htl-admin-menus.php:56
+msgid "Easy WP Hotelier Extensions & Themes"
+msgstr "Easy WP Hotelier Estensioni & Temi"
+
+#: ../includes/admin/class-htl-admin-menus.php:56
+msgid "Extensions & Themes"
+msgstr "Estensioni & Temi"
+
+#: ../includes/admin/class-htl-admin-menus.php:63,
 #: ../includes/admin/settings/class-htl-admin-settings.php:136,
 #: ../includes/admin/settings/class-htl-admin-settings.php:137,
 #: ../includes/admin/settings/views/html-admin-logs.php:33,
@@ -50,81 +1115,63 @@ msgstr "Vai alla data"
 msgid "Logs"
 msgstr "Logs"
 
-#: ../includes/admin/class-htl-admin-menus.php:37,
-#: ../includes/class-htl-post-types.php:85
-msgid "Add New Reservation"
-msgstr "Aggiungi nuova prenotazione"
-
-#: ../includes/admin/class-htl-admin-menus.php:37,
-#: ../includes/class-htl-post-types.php:84
-msgid "Add Reservation"
-msgstr "Aggiungi prenotazione"
-
-#: ../includes/admin/class-htl-admin-menus.php:39
-msgid "Calendar"
-msgstr "Calendario"
-
-#: ../includes/admin/class-htl-admin-menus.php:39
-msgid "View Calendar"
-msgstr "Visualizza calendario"
-
-#: ../includes/admin/class-htl-admin-post-types.php:94,
-#: ../includes/admin/meta-boxes/views/html-meta-box-reservation-items.php:22,
-#: ../includes/widgets/class-htl-widget-rooms-filter.php:197
+#: ../includes/admin/class-htl-admin-post-types.php:97,
+#: ../includes/widgets/class-htl-widget-rooms-filter.php:197,
+#: ../includes/admin/meta-boxes/views/html-meta-box-reservation-items.php:22
 msgid "Guests"
 msgstr "Ospiti"
 
-#: ../includes/admin/class-htl-admin-post-types.php:95
+#: ../includes/admin/class-htl-admin-post-types.php:98
 msgid "Room Type"
 msgstr "Tipo Camera"
 
-#: ../includes/admin/class-htl-admin-post-types.php:96
+#: ../includes/admin/class-htl-admin-post-types.php:99
 msgid "Available Today"
 msgstr "Disponibili Oggi"
 
-#: ../includes/admin/class-htl-admin-post-types.php:97,
-#: ../includes/admin/class-htl-admin-post-types.php:159,
+#: ../includes/admin/class-htl-admin-post-types.php:100,
+#: ../includes/admin/class-htl-admin-post-types.php:162,
 #: ../includes/widgets/class-htl-widget-rooms.php:45
 msgid "Date"
 msgstr "Data"
 
-#: ../includes/admin/class-htl-admin-post-types.php:130
+#: ../includes/admin/class-htl-admin-post-types.php:133
 msgid "%s room left"
 msgid_plural "%s rooms left"
 msgstr[0] "%s camera rimasta"
 msgstr[1] "%s camere rimaste"
 
-#: ../includes/admin/class-htl-admin-post-types.php:134
+#: ../includes/admin/class-htl-admin-post-types.php:137
 msgid "No rooms left!"
 msgstr "Nessuna camera rimasta!"
 
-#: ../includes/admin/class-htl-admin-post-types.php:155
+#: ../includes/admin/class-htl-admin-post-types.php:158
 msgid "Guest"
 msgstr "Ospite"
 
-#: ../includes/admin/class-htl-admin-post-types.php:156
+#: ../includes/admin/class-htl-admin-post-types.php:159
 msgid "Nights"
 msgstr "Notti"
 
-#: ../includes/admin/class-htl-admin-post-types.php:157,
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:166,
+#: ../includes/admin/class-htl-admin-post-types.php:160,
 #: ../includes/widgets/class-htl-widget-booking.php:70,
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:166,
 #: ../templates/booking/reservation-details.php:29
 msgid "Check-in"
 msgstr "Check-in"
 
-#: ../includes/admin/class-htl-admin-post-types.php:158,
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:175,
+#: ../includes/admin/class-htl-admin-post-types.php:161,
 #: ../includes/widgets/class-htl-widget-booking.php:80,
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:175,
 #: ../templates/booking/reservation-details.php:33
 msgid "Check-out"
 msgstr "Check-out"
 
-#: ../includes/admin/class-htl-admin-post-types.php:160
+#: ../includes/admin/class-htl-admin-post-types.php:163
 msgid "Status"
 msgstr "Stato"
 
-#: ../includes/admin/class-htl-admin-post-types.php:240
+#: ../includes/admin/class-htl-admin-post-types.php:243
 msgid ""
 "This reservation cannot be restored because one or more rooms are no longer "
 "available on those dates."
@@ -132,15 +1179,15 @@ msgstr ""
 "Questa prenotazione non può essere ripristinata perché una o più camere non "
 "sono più disponibili in quelle date."
 
-#: ../includes/admin/class-htl-admin-scripts.php:102
+#: ../includes/admin/class-htl-admin-scripts.php:99
 msgid "Please enter in decimal (%s) format without thousand separators."
 msgstr "Inserisci in formato decimale (%s) senza separatori delle migliaia."
 
-#: ../includes/admin/class-htl-admin-scripts.php:103
+#: ../includes/admin/class-htl-admin-scripts.php:100
 msgid "Please enter in a value less than the regular price."
 msgstr "Inserisci un valore minore del prezzo base."
 
-#: ../includes/admin/class-htl-admin-scripts.php:117
+#: ../includes/admin/class-htl-admin-scripts.php:114
 msgid ""
 "Are you sure you wish to proceed with this charge? This action cannot be "
 "undone."
@@ -148,13 +1195,292 @@ msgstr ""
 "Sei sicuro di voler procedere con questo addebito? Questa azione non può "
 "essere annullata."
 
-#: ../includes/admin/class-htl-admin.php:56
+#: ../includes/admin/class-htl-admin.php:57
 msgid ""
-"Thank you for using <a href=\"%1$s\" target=\"_blank\">Hotelier</a>! If you "
-"like it, please leave us a %2$s rating. Cheers :)"
+"Thank you for using <a href=\"%1$s\" target=\"_blank\">Easy WP Hotelier</a>! "
+"If you like it, please leave us a %2$s rating. Cheers :)"
 msgstr ""
-"Grazie per usare <a href=\"%1$s\" target=\"_blank\">Hotelier</a>! Se vi "
-"piace, lasciateci %2$s stelline. Ciao :)"
+"Grazie per usare <a href=\"%1$s\" target=\"_blank\">Easy WP Hotelier</a>! Se "
+"vi piace, lasciateci %2$s stelline. Ciao :)"
+
+#: ../includes/emails/class-htl-email-cancelled-reservation.php:28,
+#: ../includes/emails/class-htl-email-cancelled-reservation.php:30,
+#: ../includes/emails/class-htl-email-guest-cancelled-reservation.php:28,
+#: ../includes/emails/class-htl-email-guest-cancelled-reservation.php:30,
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:678,
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:705,
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:739
+msgid "Cancelled reservation"
+msgstr "Prenotazione cancellata"
+
+#: ../includes/emails/class-htl-email-cancelled-reservation.php:31,
+#: ../includes/emails/class-htl-email-guest-invoice.php:31,
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:698
+msgid "{site_title} - Cancelled reservation #{reservation_number}"
+msgstr "{site_title} - Prenotazione cancellata #{reservation_number}"
+
+#: ../includes/emails/class-htl-email-guest-cancelled-reservation.php:31,
+#: ../includes/emails/class-htl-email-guest-confirmed-reservation.php:31,
+#: ../includes/emails/class-htl-email-guest-request-received.php:31,
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:605,
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:636,
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:732
+msgid "Your reservation for {site_title}"
+msgstr "La tua prenotazione per {site_title}"
+
+#: ../includes/emails/class-htl-email-guest-confirmed-reservation.php:28,
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:616
+msgid "Confirmed reservation"
+msgstr "Prenotazione confermata"
+
+#: ../includes/emails/class-htl-email-guest-confirmed-reservation.php:30,
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:643
+msgid "Thank you for your reservation"
+msgstr "Grazie per la tua prenotazione"
+
+#: ../includes/emails/class-htl-email-guest-invoice.php:28,
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:647
+msgid "Guest invoice"
+msgstr "Fattura"
+
+#: ../includes/emails/class-htl-email-guest-invoice.php:30,
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:667,
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:674
+msgid "Invoice for reservation #{reservation_number}"
+msgstr "Fattura per la prenotazione #{reservation_number}"
+
+#: ../includes/emails/class-htl-email-guest-request-received.php:28,
+#: ../includes/emails/class-htl-email-guest-request-received.php:30,
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:585,
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:612
+msgid "Request received"
+msgstr "Richiesta ricevuta"
+
+#: ../includes/emails/class-htl-email-new-reservation.php:28,
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:554
+msgid "New reservation"
+msgstr "Nuova prenotazione"
+
+#: ../includes/emails/class-htl-email-new-reservation.php:30,
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:581
+msgid "New hotel reservation"
+msgstr "Nuova prenotazione hotel"
+
+#: ../includes/emails/class-htl-email-new-reservation.php:31,
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:574
+msgid "{site_title} - New hotel reservation #{reservation_number}"
+msgstr "{site_title} - Nuova prenotazione hotel #{reservation_number}"
+
+#: ../includes/shortcodes/class-htl-shortcode-booking.php:107,
+#: ../templates/emails/guest-invoice.php:119
+msgid "Pay deposit"
+msgstr "Paga deposito"
+
+#: ../includes/shortcodes/class-htl-shortcode-booking.php:111
+msgid ""
+"Hi there! Seems that this reservation does not require a deposit. Please "
+"contact us if you need assistance."
+msgstr ""
+"Salve! sembra che questa prenotazione non richieda un deposito. Contattaci "
+"se hai bisogno di assistenza."
+
+#: ../includes/shortcodes/class-htl-shortcode-booking.php:115
+msgid "Sorry, this reservation is invalid and cannot be paid for."
+msgstr ""
+"Siamo spiacenti, questa prenotazione non è valida e non può essere pagata."
+
+#: ../includes/widgets/class-htl-widget-booking.php:25
+msgid ""
+"Displays current rooms selected and booking details. Visible only in the "
+"\"listing\" and \"booking\" pages."
+msgstr ""
+"Consente di visualizzare le camere selezionate e i dettagli della "
+"prenotazione. Visibile solo nella \"lista delle camere\" e nella pagina di "
+"\"prenotazione\"."
+
+#: ../includes/widgets/class-htl-widget-booking.php:27
+msgid "Hotelier Booking"
+msgstr "Prenotazione Hotelier"
+
+#: ../includes/widgets/class-htl-widget-booking.php:31
+msgid "Your stay"
+msgstr "Il vostro soggiorno"
+
+#: ../includes/widgets/class-htl-widget-booking.php:32,
+#: ../includes/widgets/class-htl-widget-room-search.php:30,
+#: ../includes/widgets/class-htl-widget-rooms-filter.php:30,
+#: ../includes/widgets/class-htl-widget-rooms.php:30
+msgid "Title"
+msgstr "Titolo"
+
+#: ../includes/widgets/class-htl-widget-booking.php:63
+msgid "Modify"
+msgstr "Modifica"
+
+#: ../includes/widgets/class-htl-widget-booking.php:108,
+#: ../templates/booking/reservation-table.php:47,
+#: ../templates/emails/email-reservation-items.php:26,
+#: ../templates/reservation/item.php:25,
+#: ../templates/emails/plain/email-reservation-items.php:23
+msgid "Rate: %s"
+msgstr "Tariffa: %s"
+
+#: ../includes/widgets/class-htl-widget-booking.php:117,
+#: ../includes/admin/meta-boxes/views/html-meta-box-reservation-items.php:25
+msgid "Total"
+msgstr "Totale"
+
+#: ../includes/widgets/class-htl-widget-room-search.php:23
+msgid "A search box for rooms only."
+msgstr "Una casella di ricerca per le sole camere."
+
+#: ../includes/widgets/class-htl-widget-room-search.php:25
+msgid "Hotelier Room Search"
+msgstr "Hotelier Ricerca Camere"
+
+#: ../includes/widgets/class-htl-widget-room-search.php:52
+msgid "Search for:"
+msgstr "Cerca per:"
+
+#: ../includes/widgets/class-htl-widget-room-search.php:53
+msgctxt "placeholder"
+msgid "Search rooms&hellip;"
+msgstr "Ricerca camere&hellip;"
+
+#: ../includes/widgets/class-htl-widget-room-search.php:53
+msgctxt "label"
+msgid "Search for:"
+msgstr "Cerca per:"
+
+#: ../includes/widgets/class-htl-widget-room-search.php:54
+msgctxt "submit button"
+msgid "Search"
+msgstr "Cerca"
+
+#: ../includes/widgets/class-htl-widget-rooms-filter.php:23
+msgid ""
+"Displays a custom filter which lets you narrow down the list of rooms. "
+"Visible only in the \"listing\" page."
+msgstr ""
+"Visualizza un filtro personalizzato che consente di restringere l'elenco "
+"delle camere. Visibile solo nella \"lista delle camere\"."
+
+#: ../includes/widgets/class-htl-widget-rooms-filter.php:25
+msgid "Hotelier Rooms Filter"
+msgstr "Hotelier Filtro Camere"
+
+#: ../includes/widgets/class-htl-widget-rooms-filter.php:29
+msgid "Refine results"
+msgstr "Restringi i risultati"
+
+#: ../includes/widgets/class-htl-widget-rooms-filter.php:35
+msgid "Max guests (type \"0\" to hide this filter)"
+msgstr "Massimo di ospiti (digita \"0\" per nascondere questo filtro)"
+
+#: ../includes/widgets/class-htl-widget-rooms-filter.php:40
+msgid "Max children (type \"0\" to hide this filter)"
+msgstr "Massimo di bambini (digita \"0\" per nascondere questo filtro)"
+
+#: ../includes/widgets/class-htl-widget-rooms-filter.php:107
+msgid "Room type"
+msgstr "Tipologia di camera"
+
+#: ../includes/widgets/class-htl-widget-rooms-filter.php:153
+msgid "Room rate"
+msgstr "Tariffa camera"
+
+#: ../includes/widgets/class-htl-widget-rooms-filter.php:241
+msgid "Children"
+msgstr "Bambini"
+
+#: ../includes/widgets/class-htl-widget-rooms.php:23
+msgid "Display a list of rooms on your site."
+msgstr "Visualizzare un elenco di camere sul tuo sito."
+
+#: ../includes/widgets/class-htl-widget-rooms.php:25
+msgid "Hotelier Rooms"
+msgstr "Hotelier Camere"
+
+#: ../includes/widgets/class-htl-widget-rooms.php:29,
+#: ../includes/admin/meta-boxes/class-htl-admin-meta-boxes.php:133
+msgid "Rooms"
+msgstr "Camere"
+
+#: ../includes/widgets/class-htl-widget-rooms.php:38
+msgid "Number of rooms to show"
+msgstr "Numero di camere da mostrare"
+
+#: ../includes/widgets/class-htl-widget-rooms.php:43
+msgid "Order by?"
+msgstr "Ordina per?"
+
+#: ../includes/widgets/class-htl-widget-rooms.php:46
+msgid "Category"
+msgstr "Categoria"
+
+#: ../includes/widgets/class-htl-widget-rooms.php:47
+msgid "IDs"
+msgstr "IDs"
+
+#: ../includes/widgets/class-htl-widget-rooms.php:52
+msgid "Category IDs"
+msgstr "ID categorie"
+
+#: ../includes/widgets/class-htl-widget-rooms.php:54
+msgid ""
+"List of category IDs separated by commas (eg. 1,5,8). Works only when the "
+"order type is set to \"Category\""
+msgstr ""
+"Elenco di ID di categorie separati da virgole (ad es. 1,5,8). Funziona solo "
+"quando il tipo di ordine è impostato su \"Categoria\""
+
+#: ../includes/widgets/class-htl-widget-rooms.php:58
+msgid "Room IDs"
+msgstr "ID camere"
+
+#: ../includes/widgets/class-htl-widget-rooms.php:60
+msgid ""
+"List of room IDs separated by commas (eg. 1,5,8). Works only when the order "
+"type is set to \"IDs\""
+msgstr ""
+"Elenco di ID di camere separati da virgole (ad es. 1,5,8). Funziona solo "
+"quando il tipo di ordine è impostato su \"IDs\""
+
+#: ../includes/admin/license-manager/class-htl-admin-license-manager.php:110
+msgid "Licenses"
+msgstr "Licenze"
+
+#: ../includes/admin/license-manager/class-htl-admin-license-manager.php:126
+msgid ""
+"Enter your extension license keys here to receive updates for purchased "
+"extensions. If your license key has expired, please <a href=\"%s\" target="
+"\"_blank\">renew your license</a>."
+msgstr ""
+"Inserisci le chiavi di licenza qui, per ricevere gli aggiornamenti per le "
+"estensioni acquistate. Se la licenza è scaduta, si prega di <a href=\"%s\" "
+"target=\"_blank\">rinnovare la licenza</a>."
+
+#: ../includes/admin/license-manager/class-htl-admin-license-manager.php:219
+msgid "Nonce verification failed"
+msgstr "Verifica nonce non riuscita"
+
+#: ../includes/admin/license-manager/class-htl-admin-license-manager.php:219
+msgid "Error"
+msgstr "Errore"
+
+#: ../includes/admin/license-manager/class-htl-admin-license-manager.php:345
+msgid ""
+"You have invalid or expired license keys for Easy WP Hotelier. Please go to "
+"the <a href=\"%s\">Licenses page</a> to correct this issue."
+msgstr ""
+"Hai le chiavi di licenza non valide o scadute per Easy WP Hotelier. Si prega "
+"di andare alla <a href=\"%s\">pagina delle licenze</a> per correggere questo "
+"problema."
+
+#: ../includes/admin/license-manager/class-htl-admin-license-manager.php:371
+msgid "Enter valid license key for automatic updates."
+msgstr ""
+"Inserire una chiave di licenza valida per gli aggiornamenti automatici."
 
 #: ../includes/admin/meta-boxes/class-htl-admin-meta-boxes.php:127
 msgid "Room Settings"
@@ -172,11 +1498,6 @@ msgstr "Breve Descrizione Camera"
 msgid "Reservation Settings"
 msgstr "Impostazioni Prenotazione"
 
-#: ../includes/admin/meta-boxes/class-htl-admin-meta-boxes.php:133,
-#: ../includes/widgets/class-htl-widget-rooms.php:29
-msgid "Rooms"
-msgstr "Camere"
-
 #: ../includes/admin/meta-boxes/class-htl-admin-meta-boxes.php:134
 msgid "Save Reservation"
 msgstr "Salva Prenotazione"
@@ -184,27 +1505,6 @@ msgstr "Salva Prenotazione"
 #: ../includes/admin/meta-boxes/class-htl-admin-meta-boxes.php:135
 msgid "Reservation Notes"
 msgstr "Note Prenotazione"
-
-#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:43,
-#: ../includes/class-htl-booking.php:263
-msgid "First name"
-msgstr "Nome"
-
-#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:47,
-#: ../includes/class-htl-booking.php:269
-msgid "Last name"
-msgstr "Cognome"
-
-#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:52,
-#: ../includes/class-htl-booking.php:276
-msgid "Email address"
-msgstr "Indirizzo email"
-
-#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:57,
-#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:260,
-#: ../includes/class-htl-booking.php:284, ../includes/class-htl-emails.php:257
-msgid "Telephone"
-msgstr "Telefono"
 
 #: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:61
 msgid "Address 1"
@@ -214,38 +1514,11 @@ msgstr "Indirizzo 1"
 msgid "Address 2"
 msgstr "Indirizzo 2"
 
-#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:69,
-#: ../includes/class-htl-booking.php:309
-msgid "Town / City"
-msgstr "Città"
-
-#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:72,
-#: ../includes/class-htl-booking.php:321
-msgid "Postcode / Zip"
-msgstr "C.A.P. / Codice Postale"
-
-#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:76,
-#: ../includes/class-htl-booking.php:315
-msgid "State / County"
-msgstr "Provincia"
-
-#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:79,
-#: ../includes/class-htl-booking.php:292
-msgid "Country"
-msgstr "Stato"
-
 #: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:93,
 #: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:292,
 #: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:311
 msgid "Estimated arrival time"
 msgstr "Arrivo previsto stimato"
-
-#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:96,
-#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:315,
-#: ../includes/class-htl-booking.php:341,
-#: ../includes/class-htl-reservation.php:227
-msgid "I don't know"
-msgstr "Non lo so"
 
 #: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:176,
 #: ../includes/gateways/paypal-standard/includes/class-htl-gateway-paypal-request.php:123
@@ -279,7 +1552,7 @@ msgstr "Dettagli generali"
 
 #: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:206
 msgid "Reservation status:"
-msgstr "Stato della prenotazione"
+msgstr "Stato della prenotazione:"
 
 #: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:220,
 #: ../includes/admin/new-reservation/views/html-admin-new-reservation.php:59,
@@ -305,40 +1578,9 @@ msgstr "Check-in:"
 msgid "Check-out:"
 msgstr "Check-out:"
 
-#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:235,
-#: ../includes/admin/new-reservation/views/html-admin-new-reservation.php:71,
-#: ../includes/class-htl-emails.php:266,
-#: ../templates/booking/form-guest-details.php:21,
-#: ../templates/emails/email-guest-details.php:19,
-#: ../templates/reservation/guest-details.php:21
-msgid "Guest details"
-msgstr "Dati ospite"
-
-#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:246,
-#: ../includes/class-htl-booking.php:298
-msgid "Address"
-msgstr "Indirizzo"
-
-#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:253,
-#: ../includes/class-htl-emails.php:250
-msgid "Email"
-msgstr "Email"
-
 #: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:282
 msgid "Guest notes"
 msgstr "Note ospite"
-
-#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:302,
-#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:348,
-#: ../includes/class-htl-booking.php:369, ../includes/class-htl-emails.php:219
-msgid "Special requests"
-msgstr "Richieste speciali"
-
-#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:303,
-#: ../includes/class-htl-emails.php:220,
-#: ../templates/reservation/reservation-details.php:41
-msgid "None"
-msgstr "Nessuno"
 
 #: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-notes.php:52
 msgid "Added on %1$s at %2$s"
@@ -358,7 +1600,7 @@ msgid "Emails"
 msgstr "Emails"
 
 #: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-save.php:58,
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:488
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:489
 msgid "Send email"
 msgstr "Invia email"
 
@@ -419,8 +1661,8 @@ msgid "Variable room"
 msgstr "Camera variabile"
 
 #: ../includes/admin/meta-boxes/class-htl-meta-box-room-settings.php:118,
-#: ../templates/room-list/content/max-guests.php:24,
-#: ../templates/single-room/meta.php:25
+#: ../templates/single-room/meta.php:25,
+#: ../templates/room-list/content/max-guests.php:24
 msgid "Guests:"
 msgstr "Ospiti:"
 
@@ -430,8 +1672,8 @@ msgid "Children:"
 msgstr "Bambini:"
 
 #: ../includes/admin/meta-boxes/class-htl-meta-box-room-settings.php:138,
-#: ../templates/room-list/content/meta.php:27,
-#: ../templates/single-room/meta.php:36
+#: ../templates/single-room/meta.php:36,
+#: ../templates/room-list/content/meta.php:27
 msgid "Bed size(s):"
 msgstr "Dimensioni letti:"
 
@@ -504,10 +1746,10 @@ msgid "Room rate:"
 msgstr "Tariffa camera:"
 
 #: ../includes/admin/meta-boxes/class-htl-meta-box-room-settings.php:302,
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:540,
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:557,
 #: ../includes/admin/meta-boxes/views/html-meta-box-room-conditions-variation.php:40,
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-conditions.php:35,
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:539,
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:556
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-conditions.php:35
 msgid "Remove"
 msgstr "Rimuovi"
 
@@ -538,252 +1780,13 @@ msgstr ""
 "Questi dettagli non sono obbligatori; tuttavia, alcuni temi potrebbero "
 "mostrarli."
 
-#: ../includes/admin/meta-boxes/views/html-meta-box-reservation-items.php:18,
-#: ../templates/booking/form-pay.php:23,
-#: ../templates/booking/reservation-table.php:29,
-#: ../templates/emails/admin-cancelled-reservation.php:58,
-#: ../templates/emails/admin-new-reservation.php:58,
-#: ../templates/emails/guest-cancelled-reservation.php:58,
-#: ../templates/emails/guest-confirmed-reservation.php:58,
-#: ../templates/emails/guest-invoice.php:68,
-#: ../templates/emails/guest-request-received.php:58,
-#: ../templates/reservation/reservation-table.php:29
-msgid "Room"
-msgstr "Camera"
-
-#: ../includes/admin/meta-boxes/views/html-meta-box-reservation-items.php:23
-msgid "Price"
-msgstr "Prezzo"
-
-#: ../includes/admin/meta-boxes/views/html-meta-box-reservation-items.php:24,
-#: ../templates/booking/form-pay.php:24,
-#: ../templates/booking/reservation-table.php:30,
-#: ../templates/emails/admin-cancelled-reservation.php:59,
-#: ../templates/emails/admin-new-reservation.php:59,
-#: ../templates/emails/guest-cancelled-reservation.php:59,
-#: ../templates/emails/guest-confirmed-reservation.php:59,
-#: ../templates/emails/guest-invoice.php:69,
-#: ../templates/emails/guest-request-received.php:59,
-#: ../templates/reservation/reservation-table.php:30
-msgid "Qty"
-msgstr "Quantità"
-
-#: ../includes/admin/meta-boxes/views/html-meta-box-reservation-items.php:25,
-#: ../includes/widgets/class-htl-widget-booking.php:117
-msgid "Total"
-msgstr "Totale"
-
-#: ../includes/admin/meta-boxes/views/html-meta-box-reservation-items.php:50
-msgid "Total charge"
-msgstr "Addebito totale"
-
-#: ../includes/admin/meta-boxes/views/html-meta-box-reservation-items.php:60
-msgid "Paid deposit"
-msgstr "Anticipo versato"
-
-#: ../includes/admin/meta-boxes/views/html-meta-box-reservation-items.php:62
-msgid "Deposit due"
-msgstr "Deposito dovuto"
-
-#: ../includes/admin/meta-boxes/views/html-meta-box-reservation-items.php:90
-msgid "Remain deposit charged manually (%s)"
-msgstr "Deposito rimanente addebitato manualmente (%s)"
-
-#: ../includes/admin/meta-boxes/views/html-meta-box-reservation-items.php:100
-msgid "Balance due"
-msgstr "Saldo dovuto"
-
-#: ../includes/admin/meta-boxes/views/html-meta-box-reservation-items.php:111,
-#: ../includes/admin/meta-boxes/views/html-meta-box-reservation-single-item.php:39,
-#: ../templates/booking/reservation-table.php:51,
-#: ../templates/emails/email-reservation-items.php:31,
-#: ../templates/emails/plain/email-reservation-items.php:28,
-#: ../templates/reservation/item.php:29,
-#: ../templates/room-list/content/non-cancellable-info.php:24,
-#: ../templates/room-list/content/rate/rate-non-cancellable-info.php:22,
-#: ../templates/single-room/non-cancellable-info.php:24,
-#: ../templates/single-room/rate/rate-non-cancellable-info.php:21
-msgid "Non-refundable"
-msgstr "Non rimborsabile"
-
-#: ../includes/admin/meta-boxes/views/html-meta-box-reservation-items.php:119
-msgid "Charge remain deposit"
-msgstr "Addebita deposito rimanente"
-
-#: ../includes/admin/meta-boxes/views/html-meta-box-reservation-items.php:123
-msgid "Mark as unpaid"
-msgstr "Segna come non pagata"
-
-#: ../includes/admin/meta-boxes/views/html-meta-box-reservation-items.php:125
-msgid "Mark as paid"
-msgstr "Segna come pagata"
-
-#: ../includes/admin/meta-boxes/views/html-meta-box-reservation-single-item.php:26
-msgid "Rate"
-msgstr "Tariffa"
-
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-conditions-variation.php:14,
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-conditions.php:14
-msgid "Conditions:"
-msgstr "Condizioni:"
-
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-conditions-variation.php:36,
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-conditions.php:31
-msgid "Special condition here"
-msgstr "Condizioni speciali qui"
-
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-conditions-variation.php:51,
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-conditions.php:46
-msgid "Add new condition"
-msgstr "Aggiungi una nuova condizione"
-
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-price-variation.php:19,
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-price.php:19
-msgid "Global"
-msgstr "Globale"
-
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-price-variation.php:20,
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-price.php:20
-msgid "Price per day"
-msgstr "Prezzo giornaliero"
-
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-price-variation.php:21,
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-price.php:21
-msgid "Seasonal price"
-msgstr "Prezzo stagionale"
-
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-price-variation.php:29,
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-price.php:27
-msgid "Price:"
-msgstr "Prezzo:"
-
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-price-variation.php:44,
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-price-variation.php:80,
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-price.php:42,
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-price.php:74
-msgid "Regular price:"
-msgstr "Prezzo normale:"
-
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-price-variation.php:49,
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-price-variation.php:63,
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-price.php:47,
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-price.php:59
-msgid "Same price for all days of the week."
-msgstr "Stesso prezzo per tutti i giorni della settimana."
-
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-price-variation.php:58,
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-price-variation.php:91,
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-price.php:54,
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-price.php:83
-msgid "Sale price:"
-msgstr "Prezzo scontato:"
-
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-price-variation.php:82,
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-price.php:76
-msgid "The regular price of the room per day."
-msgstr "Il prezzo normale della camera al giorno."
-
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-price-variation.php:93,
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-price.php:85
-msgid "The sale price of the room per day."
-msgstr "Il prezzo scontato della camera al giorno."
-
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-price-variation.php:110,
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-price.php:100
-msgid "Default price:"
-msgstr "Prezzo predefinito:"
-
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-price-variation.php:115,
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-price.php:105
-msgid "Default room price. Used when no rules are found."
-msgstr "Prezzo predefinito. Usato quando non ci sono altre regole."
-
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-price-variation.php:124,
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-price.php:120
-msgid "Price from %s to %s:"
-msgstr "Prezzo da %s a %s:"
-
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-price-variation.php:130,
-#: ../includes/admin/meta-boxes/views/html-meta-box-room-price.php:130
-msgid ""
-"There are no seasonal prices defined. Add some date ranges <a href=\"%1$s"
-"\">here</a>."
-msgstr ""
-"Non ci sono prezzi stagionali definiti. Aggiungi alcuni intervalli di date "
-"<a href=\"%1$s\">qui</a> ."
-
-#: ../includes/admin/new-reservation/class-htl-admin-new-reservation.php:91,
-#: ../includes/class-htl-booking.php:492,
-#: ../includes/class-htl-form-functions.php:129,
-#: ../includes/class-htl-form-functions.php:176
-msgid "We were unable to process your reservation, please try again."
-msgstr ""
-"Non siamo stati in grado di elaborare la prenotazione, si prega di riprovare."
-
 #: ../includes/admin/new-reservation/class-htl-admin-new-reservation.php:121
 msgid "Please fill the required fields."
 msgstr "Si prega di compilare tutti i campi obbligatori."
 
-#: ../includes/admin/new-reservation/class-htl-admin-new-reservation.php:127,
-#: ../includes/admin/new-reservation/class-htl-admin-new-reservation.php:178,
-#: ../includes/class-htl-cart.php:269, ../includes/class-htl-cart.php:294
-msgid "Sorry, this room is not available on the given dates."
-msgstr "Siamo spiacenti, questa camera non è disponibile nelle date indicate."
-
-#: ../includes/admin/new-reservation/class-htl-admin-new-reservation.php:168,
-#: ../includes/admin/new-reservation/class-htl-admin-new-reservation.php:186,
-#: ../includes/admin/new-reservation/class-htl-admin-new-reservation.php:207,
-#: ../includes/admin/new-reservation/class-htl-admin-new-reservation.php:211,
-#: ../includes/class-htl-cart.php:277, ../includes/class-htl-cart.php:302,
-#: ../includes/class-htl-cart.php:323, ../includes/class-htl-cart.php:327
-msgid "Sorry, this room does not exists."
-msgstr "Siamo spiacenti, questa camera non esiste."
-
-#: ../includes/admin/new-reservation/class-htl-admin-new-reservation.php:265,
-#: ../includes/class-htl-cart.php:408, ../includes/class-htl-cart.php:563
-msgid "Sorry, this room cannot be reserved."
-msgstr "Siamo spiacenti, questa camera non può essere prenotata."
-
-#: ../includes/admin/new-reservation/class-htl-admin-new-reservation.php:321,
-#: ../includes/admin/new-reservation/class-htl-admin-new-reservation.php:327,
-#: ../includes/admin/new-reservation/class-htl-admin-new-reservation.php:343,
-#: ../includes/admin/new-reservation/class-htl-admin-new-reservation.php:361,
-#: ../includes/class-htl-booking.php:160,
-#: ../includes/class-htl-booking.php:171,
-#: ../includes/class-htl-booking.php:177,
-#: ../includes/class-htl-booking.php:198, ../includes/class-htl-booking.php:216
-msgid "Error %d: Unable to create reservation. Please try again."
-msgstr "Errore %d: Impossibile creare prenotazione. Riprova."
-
 #: ../includes/admin/new-reservation/class-htl-admin-new-reservation.php:374
 msgid "Reservation manually created by admin."
 msgstr "Prenotazione creata manualmente dall'amministratore."
-
-#: ../includes/admin/new-reservation/views/html-admin-new-reservation.php:42
-msgid "Add new reservation"
-msgstr "Aggiungi nuova prenotazione"
-
-#: ../includes/admin/new-reservation/views/html-admin-new-reservation.php:48
-msgid "Select room:"
-msgstr "Seleziona la camera:"
-
-#: ../includes/admin/new-reservation/views/html-admin-new-reservation.php:53
-msgid "Remove room"
-msgstr "Rimuovere camera"
-
-#: ../includes/admin/new-reservation/views/html-admin-new-reservation.php:55
-msgid "Add another room"
-msgstr "Aggiungi un'altra camera"
-
-#: ../includes/admin/new-reservation/views/html-admin-new-reservation.php:94
-msgid "In order to create a reservation, you need to have at least one room."
-msgstr ""
-"Al fine di creare una prenotazione, è necessario disporre di almeno una "
-"stanza."
-
-#: ../includes/admin/new-reservation/views/html-admin-new-reservation.php:96
-msgid "Create a new room <a href=\"%s\">here</a>."
-msgstr "Creare una nuova stanza <a href=\"%s\">qui</a> ."
 
 #: ../includes/admin/settings/class-htl-admin-settings-default.php:64
 msgid "No booking"
@@ -847,7 +1850,7 @@ msgstr "Codice postale dell'hotel"
 
 #: ../includes/admin/settings/class-htl-admin-settings-default.php:132
 msgid "The postcode/zip of your hotel."
-msgstr "Il codice postale del vostro hotel"
+msgstr "Il codice postale del vostro hotel."
 
 #: ../includes/admin/settings/class-htl-admin-settings-default.php:138
 msgid "Hotel locality"
@@ -855,7 +1858,7 @@ msgstr "Località hotel"
 
 #: ../includes/admin/settings/class-htl-admin-settings-default.php:139
 msgid "The locality of your hotel."
-msgstr "La località del vostro hotel"
+msgstr "La località del vostro hotel."
 
 #: ../includes/admin/settings/class-htl-admin-settings-default.php:145
 msgid "Hotel telephone"
@@ -901,7 +1904,7 @@ msgstr ""
 
 #: ../includes/admin/settings/class-htl-admin-settings-default.php:194
 msgid "Pets are allowed"
-msgstr "Gli animali sono ammessi."
+msgstr "Gli animali sono ammessi"
 
 #: ../includes/admin/settings/class-htl-admin-settings-default.php:198,
 #: ../templates/booking/reservation-details.php:43
@@ -923,7 +1926,7 @@ msgid "Hotelier pages"
 msgstr "Pagine Hotelier"
 
 #: ../includes/admin/settings/class-htl-admin-settings-default.php:218,
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:814
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:818
 msgid "Listing page"
 msgstr "Lista delle camere"
 
@@ -938,7 +1941,7 @@ msgstr ""
 "[hotelier_listing] deve essere inserito in questa pagina."
 
 #: ../includes/admin/settings/class-htl-admin-settings-default.php:225,
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:819
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:823
 msgid "Booking page"
 msgstr "Pagina prenotazione"
 
@@ -981,16 +1984,11 @@ msgstr "Forza HTTP all'uscita della prenotazione"
 
 #: ../includes/admin/settings/class-htl-admin-settings-default.php:246
 msgid "Force HTTP when leaving the booking page."
-msgstr "Forza HTTP durante l'uscita della prenotazione"
+msgstr "Forza HTTP durante l'uscita della prenotazione."
 
 #: ../includes/admin/settings/class-htl-admin-settings-default.php:251
 msgid "Hotelier endpoints"
 msgstr "Endpoints per Hotelier"
-
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:256,
-#: ../includes/class-htl-query.php:67
-msgid "Reservation received"
-msgstr "Prenotazione ricevuta"
 
 #: ../includes/admin/settings/class-htl-admin-settings-default.php:257
 msgid ""
@@ -1001,11 +1999,6 @@ msgstr ""
 "visualizzare la pagina in cui gli ospiti vengono indirizzati dopo il "
 "completamento della prenotazione."
 
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:263,
-#: ../includes/class-htl-query.php:64
-msgid "Pay reservation"
-msgstr "Paga la prenotazione"
-
 #: ../includes/admin/settings/class-htl-admin-settings-default.php:264
 msgid ""
 "This endpoint is appended to the booking page to display the payment form "
@@ -1013,7 +2006,7 @@ msgid ""
 msgstr ""
 "Questo endpoint è aggiunto all'URL della pagina prenotazione per "
 "visualizzare il form di pagamento (per le prenotazioni create "
-"dall'amministratore)"
+"dall'amministratore)."
 
 #: ../includes/admin/settings/class-htl-admin-settings-default.php:270
 msgid "Currency settings"
@@ -1325,13 +2318,8 @@ msgid "The text to appear in the footer of Hotelier emails."
 msgstr "Testo che apparirà nel piè di pagina delle email di Hotelier."
 
 #: ../includes/admin/settings/class-htl-admin-settings-default.php:550
-msgid "Powered by Hotelier"
-msgstr "Powered by Hotelier"
-
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:554,
-#: ../includes/emails/class-htl-email-new-reservation.php:28
-msgid "New reservation"
-msgstr "Nuova prenotazione"
+msgid "Powered by Easy WP Hotelier"
+msgstr "Powered by Easy WP Hotelier"
 
 #: ../includes/admin/settings/class-htl-admin-settings-default.php:559
 msgid ""
@@ -1377,11 +2365,6 @@ msgstr ""
 "Questa opzione controlla l'oggetto della email. Default: <code>{site_title} "
 "- Nuova prenotazione hotel #{reservation_number}</code>"
 
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:574,
-#: ../includes/emails/class-htl-email-new-reservation.php:31
-msgid "{site_title} - New hotel reservation #{reservation_number}"
-msgstr "{site_title} - Nuova prenotazione hotel #{reservation_number}"
-
 #: ../includes/admin/settings/class-htl-admin-settings-default.php:578,
 #: ../includes/admin/settings/class-htl-admin-settings-default.php:609,
 #: ../includes/admin/settings/class-htl-admin-settings-default.php:640,
@@ -1401,18 +2384,6 @@ msgid "This controls the main heading contained within the email notification."
 msgstr ""
 "Questa opzione controlla l'intestazione principale della email di notifica."
 
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:581,
-#: ../includes/emails/class-htl-email-new-reservation.php:30
-msgid "New hotel reservation"
-msgstr "Nuova prenotazione hotel"
-
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:585,
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:612,
-#: ../includes/emails/class-htl-email-guest-request-received.php:28,
-#: ../includes/emails/class-htl-email-guest-request-received.php:30
-msgid "Request received"
-msgstr "Richiesta ricevuta"
-
 #: ../includes/admin/settings/class-htl-admin-settings-default.php:590
 msgid ""
 "Request received emails are sent to guests when they request a booking "
@@ -1431,20 +2402,6 @@ msgstr ""
 "Questa opzione controlla l'oggetto della email. Default: <code>La tua "
 "prenotazione per {site_title}</code>"
 
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:605,
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:636,
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:732,
-#: ../includes/emails/class-htl-email-guest-cancelled-reservation.php:31,
-#: ../includes/emails/class-htl-email-guest-confirmed-reservation.php:31,
-#: ../includes/emails/class-htl-email-guest-request-received.php:31
-msgid "Your reservation for {site_title}"
-msgstr "La tua prenotazione per {site_title}"
-
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:616,
-#: ../includes/emails/class-htl-email-guest-confirmed-reservation.php:28
-msgid "Confirmed reservation"
-msgstr "Prenotazione confermata"
-
 #: ../includes/admin/settings/class-htl-admin-settings-default.php:621
 msgid ""
 "Reservation confirmed emails are sent to guests when their reservations are "
@@ -1455,16 +2412,6 @@ msgstr ""
 "prenotazioni vengono confermate. Dall'amministratore (quando inviate "
 "manualmente) o automaticamente (dopo il pagamento se richiesto o "
 "immediatamente nella modalità prenotazione \"istantanea\")."
-
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:643,
-#: ../includes/emails/class-htl-email-guest-confirmed-reservation.php:30
-msgid "Thank you for your reservation"
-msgstr "Grazie per la tua prenotazione"
-
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:647,
-#: ../includes/emails/class-htl-email-guest-invoice.php:28
-msgid "Guest invoice"
-msgstr "Fattura"
 
 #: ../includes/admin/settings/class-htl-admin-settings-default.php:652
 msgid ""
@@ -1485,22 +2432,6 @@ msgstr ""
 "Questa opzione controlla l'oggetto della email. Default: <code>Fattura per "
 "la prenotazione #{reservation_number}</code>"
 
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:667,
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:674,
-#: ../includes/emails/class-htl-email-guest-invoice.php:30
-msgid "Invoice for reservation #{reservation_number}"
-msgstr "Fattura per la prenotazione #{reservation_number}"
-
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:678,
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:705,
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:739,
-#: ../includes/emails/class-htl-email-cancelled-reservation.php:28,
-#: ../includes/emails/class-htl-email-cancelled-reservation.php:30,
-#: ../includes/emails/class-htl-email-guest-cancelled-reservation.php:28,
-#: ../includes/emails/class-htl-email-guest-cancelled-reservation.php:30
-msgid "Cancelled reservation"
-msgstr "Prenotazione cancellata"
-
 #: ../includes/admin/settings/class-htl-admin-settings-default.php:683
 msgid ""
 "Cancelled reservation emails are sent to the admin when the guest cancels "
@@ -1517,12 +2448,6 @@ msgstr ""
 "Questa opzione controlla l'oggetto della email. Default: <code>{site_title} "
 "- Prenotazione cancellata #{reservation_number}</code>"
 
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:698,
-#: ../includes/emails/class-htl-email-cancelled-reservation.php:31,
-#: ../includes/emails/class-htl-email-guest-invoice.php:31
-msgid "{site_title} - Cancelled reservation #{reservation_number}"
-msgstr "{site_title} - Prenotazione cancellata #{reservation_number}"
-
 #: ../includes/admin/settings/class-htl-admin-settings-default.php:712
 msgid "Guest cancelled reservation"
 msgstr "Prenotazione cancellata (ospite)"
@@ -1535,33 +2460,33 @@ msgstr ""
 "Le email di cancellazione prenotazione (ospite) vengono inviate agli ospiti "
 "quando una prenotazione viene annullata."
 
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:748
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:752
 msgid "Install Hotelier pages"
 msgstr "Installare le pagine di Hotelier"
 
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:749
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:753
 msgid ""
 "This tool will install all the missing Hotelier pages. Pages already defined "
 "and set up will not be replaced."
 msgstr ""
 "Questo tool installer&agrave; tutte le pagine mancanti di Hotelier. Le "
-"pagine gi&agrave; definite e configurate non saranno rimpiazzate"
+"pagine gi&agrave; definite e configurate non saranno rimpiazzate."
 
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:754
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:758
 msgid "Send test email"
 msgstr "Invia email di prova"
 
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:755
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:759
 msgid "Test if your WordPress installation is sending emails correctly."
 msgstr ""
 "Verifica se la tua installazione di WordPress è in grado di inviare email in "
 "modo corretto."
 
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:760
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:764
 msgid "Template debug mode"
 msgstr "Modalità debug template"
 
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:761
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:765
 msgid ""
 "This tool will disable template overrides for logged-in administrators for "
 "debugging purposes."
@@ -1569,11 +2494,11 @@ msgstr ""
 "Abilitando questa casella si disabiliteranno gli override del template per "
 "tutti gli amministratori loggati."
 
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:766
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:770
 msgid "Cleanup guest sessions"
 msgstr "Pulisci tutte le sessioni dei visitatori"
 
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:767
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:771
 msgid ""
 "This tool will delete all guest session data from the database (including "
 "any current live booking)."
@@ -1581,20 +2506,20 @@ msgstr ""
 "Questo strumento cancellerà tutti i dati di sessione dei visitatori dal "
 "database (inclusi eventuali carrelli attivi)."
 
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:772
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:776
 msgid "Delete completed bookings"
 msgstr "Elimina prenotazioni completate"
 
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:773
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:777
 msgid "This tool will delete all completed bookings from the database."
 msgstr ""
 "Questo strumento eliminerà tutte le prenotazioni completate dal database."
 
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:778
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:782
 msgid "Remove data on uninstall"
 msgstr "Rimuovi tutti i dati dopo la disinstallazione"
 
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:779
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:783
 msgid ""
 "This tool will remove all Hotelier, Rooms and Reservations data when using "
 "the \"Delete\" link on the plugins screen."
@@ -1603,126 +2528,212 @@ msgstr ""
 "prenotazioni quando viene usato il collegamento \"Cancella\" nella pagina "
 "dei plugin."
 
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:784
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:788
 msgid "Server settings & info"
 msgstr "Impostazioni server & info"
 
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:789
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:793
 msgid "Hotelier version"
 msgstr "Versione Hotelier"
 
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:794
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:798
 msgid "Theme name"
 msgstr "Nome tema"
 
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:799
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:803
 msgid "Theme version"
 msgstr "Versione tema"
 
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:804
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:808
 msgid "Parent theme name"
 msgstr "Nome tema genitore"
 
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:809
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:813
 msgid "Parent theme version"
 msgstr "Versione tema genitore"
 
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:824
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:828
 msgid "Server info"
 msgstr "Informazioni del server"
 
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:829
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:833
 msgid "PHP version"
 msgstr "Versione PHP"
 
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:834
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:838
 msgid "WP memory limit"
 msgstr "WP memory limit"
 
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:839
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:843
 msgid "WP debug"
 msgstr "Modalità di debug WP"
 
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:844
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:848
 msgid "PHP post max size"
 msgstr "PHP post max size"
 
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:849
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:853
 msgid "PHP max upload size"
 msgstr "PHP max upload size"
 
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:854
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:858
 msgid "PHP time limit"
 msgstr "PHP time limit"
 
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:859
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:863
 msgid "PHP max input vars"
 msgstr "PHP max input vars"
 
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:864
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:868
 msgid "fsockopen/cURL"
 msgstr "fsockopen/cURL"
 
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:869
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:873
 msgid "DOMDocument"
 msgstr "DOMDocument"
 
-#: ../includes/admin/settings/class-htl-admin-settings-default.php:874
+#: ../includes/admin/settings/class-htl-admin-settings-default.php:878
 msgid "Log directory writable"
 msgstr "Cartella log scrivibile"
 
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:239
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:240
 msgid "Upload"
 msgstr "Carica"
 
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:383
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:384
 msgid "Hard crop?"
 msgstr "Hard Crop - taglio forzato dell'immagine?"
 
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:428
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:429
 msgid "From:"
 msgstr "Dalle:"
 
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:437
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:438
 msgid "To:"
 msgstr "Alle:"
 
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:484
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:485
 msgid "Install pages"
 msgstr "Installa pagine"
 
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:492
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:493
 msgid "Clear sessions"
 msgstr "Cancella sessioni"
 
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:496
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:497
 msgid "Delete bookings"
 msgstr "Elimina prenotazioni"
 
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:532,
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:549
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:533,
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:550
 msgid "From"
 msgstr "Da"
 
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:534,
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:551
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:535,
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:552
 msgid "To"
 msgstr "A"
 
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:565
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:566
 msgid "Add new rule"
 msgstr "Aggiungi nuova regola"
 
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:583
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:598
+msgid ""
+"Your license key expired on %s. Please <a href=\"%s\" target=\"_blank"
+"\">renew your license key</a>."
+msgstr ""
+"La chiave di licenza è scaduta il %s. Si prega di <a href=\"%s\" target="
+"\"_blank\">rinnovare la chiave di licenza</a>."
+
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:611
+msgid ""
+"Your license key has been disabled. Please <a href=\"%s\" target=\"_blank"
+"\">contact support</a> for more information."
+msgstr ""
+"La chiave di licenza è stata disattivata. Si prega di <a href=\"%s\" target="
+"\"_blank\">contattare il supporto tecnico</a> per ulteriori informazioni."
+
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:623
+msgid ""
+"Invalid license. Please <a href=\"%s\" target=\"_blank\">visit your account "
+"page</a> and verify it."
+msgstr ""
+"Llicenza non valida. Si prega di <a href=\"%s\" target=\"_blank\">visitare "
+"la pagina del tuo account</a> e verificare."
+
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:636
+msgid ""
+"Your %s is not active for this URL. Please <a href=\"%s\" target=\"_blank"
+"\">visit your account page</a> to manage your license key URLs."
+msgstr ""
+"Il tuo %s non è attivo per questo URL. Si prega di <a href=\"%s\" target="
+"\"_blank\">visitare la pagina del tuo account</a> per gestire gli URL della "
+"chiave di licenza."
+
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:648
+msgid "This appears to be an invalid license key for %s."
+msgstr "Sembra essere una chiave di licenza non valida per %s."
+
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:657
+msgid ""
+"Your license key has reached its activation limit. <a href=\"%s\">View "
+"possible upgrades</a> now."
+msgstr ""
+"La chiave di licenza ha raggiunto il limite di attivazioni. <a href=\"%s"
+"\">Vedi possibili aggiornamenti</a>."
+
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:666
+msgid "unknown_error"
+msgstr "errore_sconosciuto"
+
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:667
+msgid ""
+"There was an error with this license key: %s. Please <a href=\"%s\">contact "
+"our support team</a>."
+msgstr ""
+"C'è stato un errore con la tua chiave di licenza: %s. Per favore <a href=\"%s"
+"\">contatta il team di supporto</a>."
+
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:687
+msgid "License key never expires."
+msgstr "La chiave di licenza non scade mai."
+
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:694
+msgid ""
+"Your license key expires soon! It expires on %s. <a href=\"%s\" target="
+"\"_blank\">Renew your license key</a>."
+msgstr ""
+"La chiave di licenza scade presto! Scade il %s. <a href=\"%s\" target="
+"\"_blank\">Rinnova la chiave di licenza</a>."
+
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:704
+msgid "Your license key expires on %s."
+msgstr "La tua chiave di licenza scade il %s"
+
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:722
+msgid "To receive updates, please enter your valid %s license key."
+msgstr ""
+"Per ricevere gli aggiornamenti, inserisci la tua chiave di licenza per %s."
+
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:729
+msgid "License Key"
+msgstr "Chiave Licenza"
+
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:734
+msgid "Deactivate License"
+msgstr "Disattivare la licenza"
+
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:759
 msgid "All missing Hotelier pages was installed successfully."
 msgstr ""
 "Tutte le pagine di Hotelier mancanti sono state installate con successo."
 
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:597
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:773
 msgid "Test email from %s"
 msgstr "Email di prova da %s"
 
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:598
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:774
 msgid ""
 "This test email proves that your WordPress installation at %s can send "
 "emails.\n"
@@ -1734,7 +2745,7 @@ msgstr ""
 "\n"
 "Data invio: %s"
 
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:602
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:778
 msgid ""
 "Email sent. This does not mean it has been delivered. See %s in the Codex "
 "for more information."
@@ -1742,65 +2753,66 @@ msgstr ""
 "Mail inviata. Questo non significa che è stata effettivamente spedita. "
 "Guarda %s per maggiori informazioni."
 
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:621
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:797
 msgid "Sessions successfully cleared."
 msgstr "Sessioni cancellate con successo."
 
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:654
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:830
 msgid "Bookings successfully deleted."
 msgstr "Prenotazioni eliminate con successo."
 
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:738,
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:760
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:914,
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:936
 msgid "Page not set"
 msgstr "La pagina non è impostata"
 
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:740,
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:762
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:916,
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:938
 msgid "The page is set, but it does not exist"
 msgstr "La pagina è impostata, ma non esiste"
 
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:742,
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:764
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:918,
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:940
 msgid "The page is set, but it is not public"
 msgstr "La pagina è impostata, ma non è pubblica"
 
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:744,
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:766
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:920,
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:942
 msgid "The page requires this shortcode: %s"
 msgstr "La pagina richiede questo shortcode: %s"
 
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:778,
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:791,
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:808,
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:838,
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:860,
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:873
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:954,
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:967,
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:984,
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:1014,
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:1036,
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:1049
 msgid "Not available"
 msgstr "Non disponibile"
 
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:795
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:971
 msgid ""
-"%s - Hotelier requires at least PHP 5.6.0. Please update your PHP version."
+"%s - Easy WP Hotelier requires at least PHP 5.6.0. Please update your PHP "
+"version."
 msgstr ""
-"%s - Hotelier richiede almeno PHP 5.6.0. Si prega di aggiornare la propria "
-"versione di PHP."
+"%s - Easy WP Hotelier richiede almeno PHP 5.6.0. Si prega di aggiornare la "
+"propria versione di PHP."
 
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:813
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:989
 msgid "%s - We recommend setting memory to at least 64MB."
 msgstr "%s - Si consiglia di impostare la memoria ad almeno 64MB."
 
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:826,
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:887,
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:900
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:1002,
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:1063,
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:1076
 msgid "Enabled"
 msgstr "Abilitato"
 
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:828
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:1004
 msgid "Disabled"
 msgstr "Disattivato"
 
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:889
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:1065
 msgid ""
 "Your server does not have fsockopen or cURL enabled - PayPal IPN and other "
 "scripts which communicate with other servers will not work. Contact your "
@@ -1810,7 +2822,7 @@ msgstr ""
 "che comunicano con gli altri server non funzioneranno. Rivolgersi al "
 "fornitore di hosting."
 
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:902
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:1078
 msgid ""
 "Your server does not have the DOMDocument class enabled - Some extensions "
 "may not work without DOMDocument"
@@ -1818,7 +2830,7 @@ msgstr ""
 "Il server non ha la classe DOMDocument abilitata - Alcune estensioni "
 "potrebbero non funzionare senza DOMDocument"
 
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:915
+#: ../includes/admin/settings/class-htl-admin-settings-fields.php:1091
 msgid ""
 "To allow logging, make <code>%s</code> writable or define a custom "
 "<code>HTL_LOG_DIR</code>."
@@ -1826,20 +2838,13 @@ msgstr ""
 "Per consentire i log, rendete <code>%s</code> accessibile in scrittura o "
 "definite un valore di <code>HTL_LOG_DIR</code> personalizzato."
 
-#: ../includes/admin/settings/class-htl-admin-settings.php:65,
-#: ../includes/class-htl-reservation.php:333,
-#: ../includes/class-htl-reservation.php:339
-msgid "Hotelier"
-msgstr "Hotelier"
+#: ../includes/admin/settings/class-htl-admin-settings.php:65
+msgid "Easy WP Hotelier"
+msgstr "Easy WP Hotelier"
 
 #: ../includes/admin/settings/class-htl-admin-settings.php:67
-msgid "Hotelier Settings"
-msgstr "Impostazioni Hotelier"
-
-#: ../includes/admin/settings/class-htl-admin-settings.php:67,
-#: ../includes/class-htl-install.php:236
-msgid "Settings"
-msgstr "Impostazioni"
+msgid "Easy WP Hotelier Settings"
+msgstr "Impostazioni Easy WP Hotelier"
 
 #: ../includes/admin/settings/class-htl-admin-settings.php:92
 msgid "General"
@@ -1857,754 +2862,15 @@ msgstr "Prezzi stagionali"
 msgid "Tools"
 msgstr "Strumenti"
 
-#: ../includes/admin/settings/class-htl-admin-settings.php:269
+#: ../includes/admin/settings/class-htl-admin-settings.php:270
 msgid "Your settings have been saved."
 msgstr "Impostazioni salvate."
 
-#: ../includes/admin/settings/class-htl-admin-settings.php:282
+#: ../includes/admin/settings/class-htl-admin-settings.php:283
 msgid ""
 "The callback function used for the <strong>%s</strong> setting is missing."
 msgstr ""
 "La funzione di callback utilizzata per impostare <strong>%s</strong> manca."
-
-#: ../includes/admin/settings/views/html-admin-logs.php:42
-msgid "Log file: %s (%s)"
-msgstr "File log: %s (%s)"
-
-#: ../includes/admin/settings/views/html-admin-logs.php:49
-msgid "View"
-msgstr "Visualizza"
-
-#: ../includes/admin/settings/views/html-admin-logs.php:56
-msgid "There are currently no logs to view."
-msgstr "Non ci sono log da visualizzare attualmente."
-
-#: ../includes/class-htl-booking.php:264
-msgctxt "placeholder"
-msgid "First name"
-msgstr "Nome"
-
-#: ../includes/class-htl-booking.php:270
-msgctxt "placeholder"
-msgid "Last name"
-msgstr "Cognome"
-
-#: ../includes/class-htl-booking.php:277
-msgctxt "placeholder"
-msgid "Email address"
-msgstr "Indirizzo email"
-
-#: ../includes/class-htl-booking.php:285
-msgctxt "placeholder"
-msgid "Telephone"
-msgstr "Telefono"
-
-#: ../includes/class-htl-booking.php:293
-msgctxt "placeholder"
-msgid "Country"
-msgstr "Stato"
-
-#: ../includes/class-htl-booking.php:299
-msgctxt "placeholder"
-msgid "Street address"
-msgstr "Via/Piazza/Strada"
-
-#: ../includes/class-htl-booking.php:304
-msgctxt "placeholder"
-msgid "Apartment, suite, unit etc. (optional)"
-msgstr "Appartamento, suite, unità ecc (opzionale)  [placeholder]"
-
-#: ../includes/class-htl-booking.php:310
-msgctxt "placeholder"
-msgid "Town / City"
-msgstr "Città"
-
-#: ../includes/class-htl-booking.php:316
-msgctxt "placeholder"
-msgid "State / County"
-msgstr "Provincia"
-
-#: ../includes/class-htl-booking.php:322
-msgctxt "placeholder"
-msgid "Postcode / Zip"
-msgstr "C.A.P. / Codice Postale"
-
-#: ../includes/class-htl-booking.php:335
-msgid "Your estimated time of arrival"
-msgstr "Arrivo previsto stimato"
-
-#: ../includes/class-htl-booking.php:336
-msgid "Time is for %s time zone"
-msgstr "Orario relativo al fuso orario di %s"
-
-#: ../includes/class-htl-booking.php:372
-msgid ""
-"Special requests cannot be guaranteed but we will do our best to meet your "
-"needs."
-msgstr ""
-"Le richieste speciali non possono essere garantite, ma faremo del nostro "
-"meglio per soddisfare le vostre esigenze."
-
-#: ../includes/class-htl-booking.php:412
-msgid "Book now & pay deposit"
-msgstr "Prenota ora & paga il deposito"
-
-#: ../includes/class-htl-booking.php:416,
-#: ../templates/room-list/content/add-to-cart.php:44,
-#: ../templates/room-list/content/rate/rate-add-to-cart.php:42
-msgid "Book now"
-msgstr "Prenota ora"
-
-#: ../includes/class-htl-booking.php:422
-msgid "Send request"
-msgstr "Invia richiesta"
-
-#: ../includes/class-htl-booking.php:505
-msgid ""
-"Sorry, your session has expired. <a href=\"%s\" class=\"htl-backward"
-"\">Return to homepage</a>"
-msgstr ""
-"Spiacenti, la tua sessione è scaduta. <a href=“%s” class=“htl-"
-"backward”>Torna alla homepage</a>"
-
-#: ../includes/class-htl-booking.php:548
-msgid "is a required field."
-msgstr "è un campo richiesto."
-
-#: ../includes/class-htl-booking.php:558
-msgid "is not a valid email address."
-msgstr "non è un indirizzo di posta elettronica valido."
-
-#: ../includes/class-htl-booking.php:565
-msgid "is not a valid number."
-msgstr "non è un numero valido."
-
-#: ../includes/class-htl-booking.php:574
-msgid "is not a valid phone number."
-msgstr "non è un numero di telefono valido."
-
-#: ../includes/class-htl-booking.php:587,
-#: ../includes/class-htl-form-functions.php:82
-msgid "You must accept our Terms &amp; Conditions."
-msgstr "Devia accettare i nostri Termini & Condizioni"
-
-#: ../includes/class-htl-booking.php:598,
-#: ../includes/class-htl-form-functions.php:76
-msgid "Invalid payment method."
-msgstr "Metodo di pagamento non valido."
-
-#: ../includes/class-htl-booking.php:617
-msgid "List of available rooms <a href=\"%s\">here</a>"
-msgstr "Elenco delle camere disponibili <a href=\"%s\">qui</a>"
-
-#: ../includes/class-htl-cart.php:117
-msgid "Get cart should not be called before the wp_loaded action."
-msgstr "Get cart non deve essere richiamata prima dell'azione wp_loaded."
-
-#: ../includes/class-htl-cart.php:182, ../includes/class-htl-cart.php:521
-msgid ""
-"%s has been removed from your cart because it can no longer be reserved. "
-"Please contact us if you need assistance."
-msgstr ""
-"%s è stata rimossa dal tuo carrello perché non può più essere prenotata. Per "
-"favore contattaci se vuoi assistenza."
-
-#: ../includes/class-htl-cart.php:542
-msgid ""
-"Sorry, we do not have enough \"%s\" available to fulfill your reservation. "
-"Please select another room or reduce the quantity and try again. We "
-"apologise for any inconvenience caused."
-msgstr ""
-"Siamo spiacenti, non abbiamo abbastanza \"%s\" disponibili per soddisfare la "
-"vostra prenotazione. Si prega di selezionare un'altra stanza o di ridurre la "
-"quantità e riprovare. Ci scusiamo per gli eventuali disagi causati."
-
-#: ../includes/class-htl-emails.php:243
-msgid "Name"
-msgstr "Nome"
-
-#: ../includes/class-htl-emails.php:266
-msgid "Your details"
-msgstr "I tuoi dettagli"
-
-#: ../includes/class-htl-form-functions.php:163
-msgid "Please select at least one room."
-msgstr "Seleziona almeno una stanza."
-
-#: ../includes/class-htl-form-functions.php:282
-msgid "Reservation already cancelled."
-msgstr "Prenotazione già annullata."
-
-#: ../includes/class-htl-form-functions.php:285
-msgid ""
-"Your reservation includes a non cancellable and non refundable room and it "
-"cannot be cancelled."
-msgstr ""
-"La tua prenotazione include una camera non cancellabile e non rimborsabile e "
-"non può essere annullata."
-
-#: ../includes/class-htl-form-functions.php:289
-msgid "Reservation cancelled by guest."
-msgstr "Prenotazione annullata dall'ospite."
-
-#: ../includes/class-htl-form-functions.php:292
-msgid "Your reservation has been cancelled."
-msgstr "La tua prenotazione è stata annullata."
-
-#: ../includes/class-htl-form-functions.php:297
-msgid ""
-"Your reservation can no longer be cancelled. Please contact us if you need "
-"assistance."
-msgstr ""
-"La tua prenotazione non può più essere annullata. Contattaci se hai bisogno "
-"di assistenza."
-
-#: ../includes/class-htl-form-functions.php:299,
-#: ../includes/shortcodes/class-htl-shortcode-booking.php:119,
-#: ../templates/booking/received.php:51
-msgid "Invalid reservation."
-msgstr "Prenotazione non valida."
-
-#: ../includes/class-htl-frontend-scripts.php:117
-msgctxt "datepicker_selected"
-msgid "Your stay:"
-msgstr "Il vostro soggiorno:"
-
-#: ../includes/class-htl-frontend-scripts.php:118
-msgctxt "datepicker_night"
-msgid "Night"
-msgstr "Notte"
-
-#: ../includes/class-htl-frontend-scripts.php:119
-msgctxt "datepicker_nights"
-msgid "Nights"
-msgstr "Notti"
-
-#: ../includes/class-htl-frontend-scripts.php:120
-msgctxt "datepicker_apply"
-msgid "Close"
-msgstr "Chiudi"
-
-#: ../includes/class-htl-frontend-scripts.php:124
-msgctxt "datepicker_error_more"
-msgid "Date range should not be more than 1 night"
-msgstr "L'intervallo di date non dovrebbe essere più di 1 notte"
-
-#: ../includes/class-htl-frontend-scripts.php:125
-msgctxt "datepicker_error_more_plural"
-msgid "Date range should not be more than %d nights"
-msgstr "L'intervallo di date non dovrebbe essere più di %d notti"
-
-#: ../includes/class-htl-frontend-scripts.php:126
-msgctxt "datepicker_error_less"
-msgid "Date range should not be less than 1 night"
-msgstr "L'intervallo di date non dovrebbe essere meno di 1 notte"
-
-#: ../includes/class-htl-frontend-scripts.php:127
-msgctxt "datepicker_error_less_plural"
-msgid "Date range should not be less than %d nights"
-msgstr "L'intervallo di date non dovrebbe essere meno di %d notti"
-
-#: ../includes/class-htl-frontend-scripts.php:128
-msgctxt "datepicker_info_more"
-msgid "Please select a date range longer than 1 night"
-msgstr "Si prega di selezionare un intervallo di date più lungo di 1 notte"
-
-#: ../includes/class-htl-frontend-scripts.php:129
-msgctxt "datepicker_info_more_plural"
-msgid "Please select a date range longer than %d nights"
-msgstr "Si prega di selezionare un intervallo di date più lungo di %d notti"
-
-#: ../includes/class-htl-frontend-scripts.php:130
-msgctxt "datepicker_info_range"
-msgid "Please select a date range between %d and %d nights"
-msgstr "Si prega di selezionare un intervallo di date tra %d e %d notti"
-
-#: ../includes/class-htl-frontend-scripts.php:131
-msgctxt "datepicker_info_default"
-msgid "Please select a date range"
-msgstr "Seleziona un intervallo di date"
-
-#: ../includes/class-htl-info.php:148
-msgid "Pets are not allowed."
-msgstr "Gli animali non sono ammessi."
-
-#: ../includes/class-htl-install.php:192
-msgctxt "Page slug"
-msgid "available-rooms"
-msgstr "camere-disponibili"
-
-#: ../includes/class-htl-install.php:193
-msgctxt "Page title"
-msgid "Available rooms"
-msgstr "Camere disponibili"
-
-#: ../includes/class-htl-install.php:197
-msgctxt "Page slug"
-msgid "booking"
-msgstr "prenotazione"
-
-#: ../includes/class-htl-install.php:198
-msgctxt "Page title"
-msgid "Booking"
-msgstr "Prenotazione"
-
-#: ../includes/class-htl-install.php:236
-msgid "View Hotelier settings"
-msgstr "Visualizza impostazioni Hotelier"
-
-#: ../includes/class-htl-install.php:252
-msgid "View Hotelier documentation"
-msgstr "Visualizza documentazione Hotelier"
-
-#: ../includes/class-htl-install.php:252
-msgid "Docs"
-msgstr "Documentazione"
-
-#: ../includes/class-htl-payment-gateways.php:98
-msgid "Paypal Standard"
-msgstr "PayPal Standard"
-
-#: ../includes/class-htl-post-types.php:48
-msgctxt "room post type name"
-msgid "Rooms"
-msgstr "Camere"
-
-#: ../includes/class-htl-post-types.php:49
-msgctxt "singular room post type name"
-msgid "Room"
-msgstr "Camera"
-
-#: ../includes/class-htl-post-types.php:50
-msgid "Add New"
-msgstr "Aggiungi nuovo"
-
-#: ../includes/class-htl-post-types.php:51
-msgid "Add New Room"
-msgstr "Aggiungi nuova camera"
-
-#: ../includes/class-htl-post-types.php:52
-msgid "Edit Room"
-msgstr "Modifica camera"
-
-#: ../includes/class-htl-post-types.php:53
-msgid "New Room"
-msgstr "Nuova camera"
-
-#: ../includes/class-htl-post-types.php:54
-msgid "All Rooms"
-msgstr "Tutte le camere"
-
-#: ../includes/class-htl-post-types.php:55
-msgid "View Room"
-msgstr "Vedi camera"
-
-#: ../includes/class-htl-post-types.php:56
-msgid "Search Rooms"
-msgstr "Cerca camere"
-
-#: ../includes/class-htl-post-types.php:57
-msgid "No Rooms found"
-msgstr "Nessuna camera trovata"
-
-#: ../includes/class-htl-post-types.php:58
-msgid "No Rooms found in Trash"
-msgstr "Nessuna camera nel cestino"
-
-#: ../includes/class-htl-post-types.php:60
-msgctxt "room post type menu name"
-msgid "Rooms"
-msgstr "Camere"
-
-#: ../includes/class-htl-post-types.php:82
-msgctxt "post type general name"
-msgid "Reservations"
-msgstr "Prenotazioni"
-
-#: ../includes/class-htl-post-types.php:83
-msgctxt "post type singular name"
-msgid "Reservation"
-msgstr "Prenotazione"
-
-#: ../includes/class-htl-post-types.php:86
-msgid "Edit"
-msgstr "Modifica"
-
-#: ../includes/class-htl-post-types.php:87
-msgid "Edit Reservation"
-msgstr "Modifica prenotazione"
-
-#: ../includes/class-htl-post-types.php:88
-msgid "New Reservation"
-msgstr "Nuova prenotazione"
-
-#: ../includes/class-htl-post-types.php:89,
-#: ../includes/class-htl-post-types.php:90
-msgid "View Reservation"
-msgstr "Visualizza prenotazione"
-
-#: ../includes/class-htl-post-types.php:91
-msgid "Search Reservations"
-msgstr "Cerca prenotazioni"
-
-#: ../includes/class-htl-post-types.php:92
-msgid "No Reservations found"
-msgstr "Nessuna prenotazione trovata"
-
-#: ../includes/class-htl-post-types.php:93
-msgid "No Reservations found in Trash"
-msgstr "Nessuna prenotazione nel cestino"
-
-#: ../includes/class-htl-post-types.php:94
-msgid "Parent Reservation"
-msgstr "Prenotazione genitore"
-
-#: ../includes/class-htl-post-types.php:95
-msgctxt "admin menu name"
-msgid "Reservations"
-msgstr "Prenotazioni"
-
-#: ../includes/class-htl-post-types.php:100
-msgid "This is where hotel reservations are stored."
-msgstr "Il luogo in cui vengono salvate le prenotazioni dell'hotel."
-
-#: ../includes/class-htl-post-types.php:128
-msgctxt "Reservation status"
-msgid "Pending Payment"
-msgstr "In attesa di pagamento"
-
-#: ../includes/class-htl-post-types.php:133
-msgid "Pending Payment <span class=\"count\">(%s)</span>"
-msgid_plural "Pending Payment <span class=\"count\">(%s)</span>"
-msgstr[0] "In attesa di pagamento <span class=\"count\">(%s)</span>"
-msgstr[1] "In attesa di pagamento <span class=\"count\">(%s)</span>"
-
-#: ../includes/class-htl-post-types.php:136,
-#: ../includes/htl-reservation-functions.php:119
-msgctxt "Reservation status"
-msgid "On Hold"
-msgstr "In attesa"
-
-#: ../includes/class-htl-post-types.php:141
-msgid "On Hold <span class=\"count\">(%s)</span>"
-msgid_plural "On Hold <span class=\"count\">(%s)</span>"
-msgstr[0] "In attesa <span class=\"count\">(%s)</span>"
-msgstr[1] "In attesa <span class=\"count\">(%s)</span>"
-
-#: ../includes/class-htl-post-types.php:144,
-#: ../includes/htl-reservation-functions.php:117
-msgctxt "Reservation status"
-msgid "Confirmed"
-msgstr "Confermata"
-
-#: ../includes/class-htl-post-types.php:149
-msgid "Confirmed <span class=\"count\">(%s)</span>"
-msgid_plural "Confirmed <span class=\"count\">(%s)</span>"
-msgstr[0] "Confermata <span class=\"count\">(%s)</span>"
-msgstr[1] "Confermate <span class=\"count\">(%s)</span>"
-
-#: ../includes/class-htl-post-types.php:152,
-#: ../includes/htl-reservation-functions.php:116
-msgctxt "Reservation status"
-msgid "Completed"
-msgstr "Completata"
-
-#: ../includes/class-htl-post-types.php:157
-msgid "Completed <span class=\"count\">(%s)</span>"
-msgid_plural "Completed <span class=\"count\">(%s)</span>"
-msgstr[0] "Completata <span class=\"count\">(%s)</span>"
-msgstr[1] "Completate <span class=\"count\">(%s)</span>"
-
-#: ../includes/class-htl-post-types.php:160,
-#: ../includes/htl-reservation-functions.php:120
-msgctxt "Reservation status"
-msgid "Cancelled"
-msgstr "Cancellata"
-
-#: ../includes/class-htl-post-types.php:165
-msgid "Cancelled <span class=\"count\">(%s)</span>"
-msgid_plural "Cancelled <span class=\"count\">(%s)</span>"
-msgstr[0] "Cancellata <span class=“count”>(%s)</span>"
-msgstr[1] "Cancellate <span class=“count”>(%s)</span>"
-
-#: ../includes/class-htl-post-types.php:168,
-#: ../includes/htl-reservation-functions.php:121
-msgctxt "Reservation status"
-msgid "Failed"
-msgstr "Non riuscita"
-
-#: ../includes/class-htl-post-types.php:173
-msgid "Failed <span class=\"count\">(%s)</span>"
-msgid_plural "Failed <span class=\"count\">(%s)</span>"
-msgstr[0] "Non riuscita <span class=\"count\">(%s)</span>"
-msgstr[1] "Non riuscite <span class=\"count\">(%s)</span>"
-
-#: ../includes/class-htl-post-types.php:196
-msgid "Room Categories"
-msgstr "Categorie camere"
-
-#: ../includes/class-htl-post-types.php:197
-msgid "Room Category"
-msgstr "Categoria camera"
-
-#: ../includes/class-htl-post-types.php:198
-msgid "Categories"
-msgstr "Categorie"
-
-#: ../includes/class-htl-post-types.php:199
-msgid "Search Room Categories"
-msgstr "Ricerca categorie camere"
-
-#: ../includes/class-htl-post-types.php:200
-msgid "All Room Categories"
-msgstr "Tutte le categorie di camere"
-
-#: ../includes/class-htl-post-types.php:201
-msgid "Edit Room Category"
-msgstr "Modifica categoria camera"
-
-#: ../includes/class-htl-post-types.php:202
-msgid "Update Room Category"
-msgstr "Aggiorna categoria camera"
-
-#: ../includes/class-htl-post-types.php:203
-msgid "Add New Room Category"
-msgstr "Aggiungi nuova categoria camera"
-
-#: ../includes/class-htl-post-types.php:204
-msgid "New Room Category Name"
-msgstr "Nuovo nome categoria camera"
-
-#: ../includes/class-htl-post-types.php:224
-msgctxt "taxonomy general name"
-msgid "Rates"
-msgstr "Tariffe"
-
-#: ../includes/class-htl-post-types.php:225
-msgctxt "taxonomy singular name"
-msgid "Rate"
-msgstr "Tariffa"
-
-#: ../includes/class-htl-post-types.php:226
-msgctxt "admin menu name"
-msgid "Rates"
-msgstr "Tariffe"
-
-#: ../includes/class-htl-post-types.php:227
-msgid "Search Rates"
-msgstr "Ricerca tariffe"
-
-#: ../includes/class-htl-post-types.php:228
-msgid "All Rates"
-msgstr "Tutte le tariffe"
-
-#: ../includes/class-htl-post-types.php:229
-msgid "Edit Rate"
-msgstr "Modifica tariffa"
-
-#: ../includes/class-htl-post-types.php:230
-msgid "Update Rate"
-msgstr "Aggiorna tariffa"
-
-#: ../includes/class-htl-post-types.php:231
-msgid "Add New Rate"
-msgstr "Aggiungi nuova tariffa"
-
-#: ../includes/class-htl-post-types.php:232
-msgid "New Rate Name"
-msgstr "Nuovo nome tariffa"
-
-#: ../includes/class-htl-post-types.php:253
-msgctxt "taxonomy general name"
-msgid "Facilities"
-msgstr "Servizi"
-
-#: ../includes/class-htl-post-types.php:254
-msgctxt "taxonomy singular name"
-msgid "Facility"
-msgstr "Servizio"
-
-#: ../includes/class-htl-post-types.php:255
-msgctxt "admin menu name"
-msgid "Facilities"
-msgstr "Servizi"
-
-#: ../includes/class-htl-post-types.php:256
-msgid "Search Facilities"
-msgstr "Ricerca servizi"
-
-#: ../includes/class-htl-post-types.php:257
-msgid "All Facilities"
-msgstr "Tutti i servizi"
-
-#: ../includes/class-htl-post-types.php:258
-msgid "Edit Facility"
-msgstr "Modifica servizio"
-
-#: ../includes/class-htl-post-types.php:259
-msgid "Update Facility"
-msgstr "Aggiorna servizio"
-
-#: ../includes/class-htl-post-types.php:260
-msgid "Add New Facility"
-msgstr "Aggiungi nuovo servizio"
-
-#: ../includes/class-htl-post-types.php:261
-msgid "New Facility Name"
-msgstr "Nuovo nome servizio"
-
-#: ../includes/class-htl-post-types.php:288
-msgid "Room updated. <a href=\"%s\">View Room</a>"
-msgstr "Camera aggiornata. <a href=\"%s\">Vedi camera</a>"
-
-#: ../includes/class-htl-post-types.php:289,
-#: ../includes/class-htl-post-types.php:304
-msgid "Custom field updated."
-msgstr "Campo personalizzato aggiornato."
-
-#: ../includes/class-htl-post-types.php:290,
-#: ../includes/class-htl-post-types.php:305
-msgid "Custom field deleted."
-msgstr "Campo personalizzato cancellato."
-
-#: ../includes/class-htl-post-types.php:291
-msgid "Room updated."
-msgstr "Camera aggiornata."
-
-#: ../includes/class-htl-post-types.php:292
-msgid "Room restored to revision from %s"
-msgstr "Camera ripristinata a revisione da %s"
-
-#: ../includes/class-htl-post-types.php:293
-msgid "Room published. <a href=\"%s\">View Room</a>"
-msgstr "Camera pubblicata. <a href=\"%s\">Vedi camera</a>"
-
-#: ../includes/class-htl-post-types.php:294
-msgid "Room saved."
-msgstr "Camera salvata."
-
-#: ../includes/class-htl-post-types.php:295
-msgid "Room submitted. <a target=\"_blank\" href=\"%s\">Preview Room</a>"
-msgstr "Camera inserita. <a target=\"_blank\" href=\"%s\">Anteprima camera</a>"
-
-#: ../includes/class-htl-post-types.php:296
-msgid ""
-"Room scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s"
-"\">Preview Room</a>"
-msgstr ""
-"Camera pianificata per: <strong>%1$s</strong>. <a target=\"_blank\" href="
-"\"%2$s\">Anteprima camera</a>"
-
-#: ../includes/class-htl-post-types.php:297,
-#: ../includes/class-htl-post-types.php:312
-msgid "M j, Y @ G:i"
-msgstr "M j, Y @ G:i"
-
-#: ../includes/class-htl-post-types.php:298
-msgid "Room draft updated. <a target=\"_blank\" href=\"%s\">Preview Room</a>"
-msgstr ""
-"Bozza camera salvata. <a target=\"_blank\" href=\"%s\">Anteprima camera</a>"
-
-#: ../includes/class-htl-post-types.php:303,
-#: ../includes/class-htl-post-types.php:306,
-#: ../includes/class-htl-post-types.php:308
-msgid "Reservation updated."
-msgstr "Prenotazione aggiornata."
-
-#: ../includes/class-htl-post-types.php:307
-msgid "Reservation restored to revision from %s"
-msgstr "Prenotazione ripristinata a revisione da %s"
-
-#: ../includes/class-htl-post-types.php:309
-msgid "Reservation saved."
-msgstr "Prenotazione salvata."
-
-#: ../includes/class-htl-post-types.php:310
-msgid "Reservation submitted."
-msgstr "Prenotazione inserita."
-
-#: ../includes/class-htl-post-types.php:311
-msgid "Reservation scheduled for: <strong>%1$s</strong>."
-msgstr "Prenotazione pianificata per: <strong>%1$s</strong>."
-
-#: ../includes/class-htl-post-types.php:313
-msgid "Reservation draft updated."
-msgstr "Bozza prenotazione salvata."
-
-#: ../includes/class-htl-post-types.php:314
-msgid "Reservation updated and email sent."
-msgstr "Prenotazione aggiornata e email inviata."
-
-#: ../includes/class-htl-reservation.php:376
-msgid ""
-"Error: Trying to change the status from %1$s to %2$s. %1$s reservations "
-"cannot be restored or modified."
-msgstr ""
-"Errore: tentativo di modificare lo stato da %1$s a %2$s. Prenotazioni %1$s "
-"non possono essere ripristinate o modificate."
-
-#: ../includes/class-htl-reservation.php:394
-msgid "Reservation status changed from %s to %s."
-msgstr "Stato prenotazione cambiato da %s a %s."
-
-#: ../includes/class-htl-reservation.php:842
-msgid "Subtotal:"
-msgstr "Totale parziale:"
-
-#: ../includes/class-htl-reservation.php:849
-msgid "Paid Deposit:"
-msgstr "Deposito versato:"
-
-#: ../includes/class-htl-reservation.php:856
-msgid "Required Deposit:"
-msgstr "Deposito richiesto:"
-
-#: ../includes/class-htl-reservation.php:863
-msgid "Payment Method:"
-msgstr "Metodo di pagamento:"
-
-#: ../includes/class-htl-reservation.php:871
-msgid "Total Due:"
-msgstr "Totale dovuto:"
-
-#: ../includes/class-htl-reservation.php:889,
-#: ../includes/class-htl-reservation.php:901,
-#: ../templates/booking/reservation-table.php:84,
-#: ../templates/booking/reservation-table.php:107
-msgid "Total:"
-msgstr "Totale:"
-
-#: ../includes/class-htl-reservation.php:894
-msgid "Deposit Due Now:"
-msgstr "Deposito dovuto ora:"
-
-#: ../includes/class-htl-roles.php:32
-msgid "Hotel Manager"
-msgstr "Amministratore Hotel"
-
-#: ../includes/class-htl-room-variation.php:346,
-#: ../includes/class-htl-room-variation.php:353,
-#: ../includes/class-htl-room.php:682, ../includes/class-htl-room.php:689
-msgctxt "price"
-msgid "Price: %s"
-msgstr "Prezzo: %s"
-
-#: ../includes/class-htl-room-variation.php:415,
-#: ../includes/class-htl-room-variation.php:427,
-#: ../includes/class-htl-room.php:775, ../includes/class-htl-room.php:809,
-#: ../includes/class-htl-room.php:824
-msgid "Rates from %s per night"
-msgstr "A partire da %s per notte"
-
-#: ../includes/class-htl-room-variation.php:440,
-#: ../includes/class-htl-room.php:842, ../includes/class-htl-room.php:844
-msgid "%s per night"
-msgstr "%s per notte"
-
-#: ../includes/class-htl-room.php:667
-msgctxt "min_price"
-msgid "From %s"
-msgstr "Da %s"
 
 #: ../includes/gateways/paypal-standard/class-htl-gateway-paypal.php:28
 msgid "PayPal"
@@ -2659,7 +2925,7 @@ msgstr "Log debug"
 
 #: ../includes/gateways/paypal-standard/class-htl-gateway-paypal.php:75
 msgid "Enable logging."
-msgstr "Abilita scrittura log"
+msgstr "Abilita scrittura log."
 
 #: ../includes/gateways/paypal-standard/class-htl-gateway-paypal.php:76
 msgid "Log PayPal events, such as IPN requests, inside <code>%s</code>"
@@ -2688,6 +2954,257 @@ msgstr ""
 "l'impostazione predefinita. Gli stili pagina sono definiti dal tuo conto "
 "PayPal."
 
+#: ../includes/admin/addons/views/html-admin-page-addons.php:19
+msgid ""
+"Supercharge your hotel website with extensions built specifically for Easy "
+"WP Hotelier."
+msgstr ""
+"Potenzia il sito web del tuo hotel con estensioni sviluppate appositamente "
+"per Easy WP Hotelier."
+
+#: ../includes/admin/addons/views/html-admin-page-addons.php:20
+msgid ""
+"Premium extensions are special WordPress plugins that enhance, or extend, "
+"the core Easy WP Hotelier functionalities."
+msgstr ""
+"Estensioni premium sono speciali plugin per WordPress che migliorano, o "
+"estendono, le funzionalità di base di Easy WP Hotelier."
+
+#: ../includes/admin/addons/views/html-admin-page-addons.php:39
+msgid "View extension"
+msgstr "Visualizza estensione"
+
+#: ../includes/admin/addons/views/html-admin-page-addons.php:39
+msgid "Get this extension"
+msgstr "Ottieni questa estensione."
+
+#: ../includes/admin/addons/views/html-admin-page-addons.php:49
+msgid ""
+"Our catalog of Easy WP Hotelier Extensions can be found on Easy WP Hotelier "
+"here: <a href=\"%s\">Easy WP Hotelier Extensions</a>"
+msgstr ""
+"Il catalogo delle estensioni per Easy WP Hotelier può essere trovato su Easy "
+"WP Hotelier: <a href=\"%s\">Estensioni di Easy WP Hotelier</a>"
+
+#: ../includes/admin/calendar/views/html-admin-calendar.php:21
+msgid "Booking calendar"
+msgstr "Calendario prenotazioni"
+
+#: ../includes/admin/calendar/views/html-admin-calendar.php:69
+msgid "Today"
+msgstr "Oggi"
+
+#: ../includes/admin/calendar/views/html-admin-calendar.php:77
+msgid "Go to date"
+msgstr "Vai alla data"
+
+#: ../includes/admin/meta-boxes/views/html-meta-box-reservation-items.php:18,
+#: ../templates/booking/form-pay.php:23,
+#: ../templates/booking/reservation-table.php:29,
+#: ../templates/emails/admin-cancelled-reservation.php:58,
+#: ../templates/emails/admin-new-reservation.php:58,
+#: ../templates/emails/guest-cancelled-reservation.php:58,
+#: ../templates/emails/guest-confirmed-reservation.php:58,
+#: ../templates/emails/guest-invoice.php:68,
+#: ../templates/emails/guest-request-received.php:58,
+#: ../templates/reservation/reservation-table.php:29
+msgid "Room"
+msgstr "Camera"
+
+#: ../includes/admin/meta-boxes/views/html-meta-box-reservation-items.php:23
+msgid "Price"
+msgstr "Prezzo"
+
+#: ../includes/admin/meta-boxes/views/html-meta-box-reservation-items.php:24,
+#: ../templates/booking/form-pay.php:24,
+#: ../templates/booking/reservation-table.php:30,
+#: ../templates/emails/admin-cancelled-reservation.php:59,
+#: ../templates/emails/admin-new-reservation.php:59,
+#: ../templates/emails/guest-cancelled-reservation.php:59,
+#: ../templates/emails/guest-confirmed-reservation.php:59,
+#: ../templates/emails/guest-invoice.php:69,
+#: ../templates/emails/guest-request-received.php:59,
+#: ../templates/reservation/reservation-table.php:30
+msgid "Qty"
+msgstr "Quantità"
+
+#: ../includes/admin/meta-boxes/views/html-meta-box-reservation-items.php:50
+msgid "Total charge"
+msgstr "Addebito totale"
+
+#: ../includes/admin/meta-boxes/views/html-meta-box-reservation-items.php:60
+msgid "Paid deposit"
+msgstr "Anticipo versato"
+
+#: ../includes/admin/meta-boxes/views/html-meta-box-reservation-items.php:62
+msgid "Deposit due"
+msgstr "Deposito dovuto"
+
+#: ../includes/admin/meta-boxes/views/html-meta-box-reservation-items.php:90
+msgid "Remain deposit charged manually (%s)"
+msgstr "Deposito rimanente addebitato manualmente (%s)"
+
+#: ../includes/admin/meta-boxes/views/html-meta-box-reservation-items.php:100
+msgid "Balance due"
+msgstr "Saldo dovuto"
+
+#: ../includes/admin/meta-boxes/views/html-meta-box-reservation-items.php:111,
+#: ../includes/admin/meta-boxes/views/html-meta-box-reservation-single-item.php:39,
+#: ../templates/booking/reservation-table.php:51,
+#: ../templates/emails/email-reservation-items.php:31,
+#: ../templates/reservation/item.php:29,
+#: ../templates/single-room/non-cancellable-info.php:24,
+#: ../templates/emails/plain/email-reservation-items.php:28,
+#: ../templates/room-list/content/non-cancellable-info.php:24,
+#: ../templates/single-room/rate/rate-non-cancellable-info.php:21,
+#: ../templates/room-list/content/rate/rate-non-cancellable-info.php:22
+msgid "Non-refundable"
+msgstr "Non rimborsabile"
+
+#: ../includes/admin/meta-boxes/views/html-meta-box-reservation-items.php:119
+msgid "Charge remain deposit"
+msgstr "Addebita deposito rimanente"
+
+#: ../includes/admin/meta-boxes/views/html-meta-box-reservation-items.php:123
+msgid "Mark as unpaid"
+msgstr "Segna come non pagata"
+
+#: ../includes/admin/meta-boxes/views/html-meta-box-reservation-items.php:125
+msgid "Mark as paid"
+msgstr "Segna come pagata"
+
+#: ../includes/admin/meta-boxes/views/html-meta-box-reservation-single-item.php:26
+msgid "Rate"
+msgstr "Tariffa"
+
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-conditions-variation.php:14,
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-conditions.php:14
+msgid "Conditions:"
+msgstr "Condizioni:"
+
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-conditions-variation.php:36,
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-conditions.php:31
+msgid "Special condition here"
+msgstr "Condizioni speciali qui"
+
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-conditions-variation.php:51,
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-conditions.php:46
+msgid "Add new condition"
+msgstr "Aggiungi una nuova condizione"
+
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-price-variation.php:19,
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-price.php:19
+msgid "Global"
+msgstr "Globale"
+
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-price-variation.php:20,
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-price.php:20
+msgid "Price per day"
+msgstr "Prezzo giornaliero"
+
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-price-variation.php:21,
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-price.php:21
+msgid "Seasonal price"
+msgstr "Prezzo stagionale"
+
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-price-variation.php:29,
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-price.php:27
+msgid "Price:"
+msgstr "Prezzo:"
+
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-price-variation.php:44,
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-price-variation.php:80,
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-price.php:42,
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-price.php:74
+msgid "Regular price:"
+msgstr "Prezzo normale:"
+
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-price-variation.php:49,
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-price-variation.php:63,
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-price.php:47,
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-price.php:59
+msgid "Same price for all days of the week."
+msgstr "Stesso prezzo per tutti i giorni della settimana."
+
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-price-variation.php:58,
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-price-variation.php:91,
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-price.php:54,
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-price.php:83
+msgid "Sale price:"
+msgstr "Prezzo scontato:"
+
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-price-variation.php:82,
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-price.php:76
+msgid "The regular price of the room per day."
+msgstr "Il prezzo normale della camera al giorno."
+
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-price-variation.php:93,
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-price.php:85
+msgid "The sale price of the room per day."
+msgstr "Il prezzo scontato della camera al giorno."
+
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-price-variation.php:110,
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-price.php:100
+msgid "Default price:"
+msgstr "Prezzo predefinito:"
+
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-price-variation.php:115,
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-price.php:105
+msgid "Default room price. Used when no rules are found."
+msgstr "Prezzo predefinito. Usato quando non ci sono altre regole."
+
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-price-variation.php:124,
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-price.php:120
+msgid "Price from %s to %s:"
+msgstr "Prezzo da %s a %s:"
+
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-price-variation.php:130,
+#: ../includes/admin/meta-boxes/views/html-meta-box-room-price.php:130
+msgid ""
+"There are no seasonal prices defined. Add some date ranges <a href=\"%1$s"
+"\">here</a>."
+msgstr ""
+"Non ci sono prezzi stagionali definiti. Aggiungi alcuni intervalli di date "
+"<a href=\"%1$s\">qui</a> ."
+
+#: ../includes/admin/new-reservation/views/html-admin-new-reservation.php:42
+msgid "Add new reservation"
+msgstr "Aggiungi nuova prenotazione"
+
+#: ../includes/admin/new-reservation/views/html-admin-new-reservation.php:48
+msgid "Select room:"
+msgstr "Seleziona la camera:"
+
+#: ../includes/admin/new-reservation/views/html-admin-new-reservation.php:53
+msgid "Remove room"
+msgstr "Rimuovere camera"
+
+#: ../includes/admin/new-reservation/views/html-admin-new-reservation.php:55
+msgid "Add another room"
+msgstr "Aggiungi un'altra camera"
+
+#: ../includes/admin/new-reservation/views/html-admin-new-reservation.php:94
+msgid "In order to create a reservation, you need to have at least one room."
+msgstr ""
+"Al fine di creare una prenotazione, è necessario disporre di almeno una "
+"stanza."
+
+#: ../includes/admin/new-reservation/views/html-admin-new-reservation.php:96
+msgid "Create a new room <a href=\"%s\">here</a>."
+msgstr "Creare una nuova stanza <a href=\"%s\">qui</a> ."
+
+#: ../includes/admin/settings/views/html-admin-logs.php:42
+msgid "Log file: %s (%s)"
+msgstr "File log: %s (%s)"
+
+#: ../includes/admin/settings/views/html-admin-logs.php:49
+msgid "View"
+msgstr "Visualizza"
+
+#: ../includes/admin/settings/views/html-admin-logs.php:56
+msgid "There are currently no logs to view."
+msgstr "Non ci sono log da visualizzare attualmente."
+
 #: ../includes/gateways/paypal-standard/includes/class-htl-gateway-paypal-response.php:142
 msgid "Validation error: PayPal currencies do not match (code %s)."
 msgstr "Errore di convalida: valute PayPal non corrispondono (codice %s)."
@@ -2714,360 +3231,6 @@ msgstr "Pagamento in attesa: %s"
 #: ../includes/gateways/paypal-standard/includes/class-htl-gateway-paypal-response.php:222
 msgid "Payment %s via IPN."
 msgstr "Pagamento %s via IPN."
-
-#: ../includes/htl-cart-functions.php:25
-msgid "This room is protected and cannot be reserved."
-msgstr "Questa camera è protetta e non può essere prenotata."
-
-#: ../includes/htl-cart-functions.php:116
-msgid "Day"
-msgstr "Giorno"
-
-#: ../includes/htl-cart-functions.php:116,
-#: ../templates/booking/form-pay.php:25,
-#: ../templates/booking/reservation-table.php:31,
-#: ../templates/emails/admin-cancelled-reservation.php:60,
-#: ../templates/emails/admin-new-reservation.php:60,
-#: ../templates/emails/guest-cancelled-reservation.php:60,
-#: ../templates/emails/guest-confirmed-reservation.php:60,
-#: ../templates/emails/guest-invoice.php:70,
-#: ../templates/emails/guest-request-received.php:60,
-#: ../templates/reservation/reservation-table.php:31
-msgid "Cost"
-msgstr "Costo"
-
-#: ../includes/htl-price-functions.php:46
-msgid "US Dollars (&#36;)"
-msgstr "Dollari Americani (&#36;)"
-
-#: ../includes/htl-price-functions.php:47
-msgid "Euros (&euro;)"
-msgstr "Euro (&euro;)"
-
-#: ../includes/htl-price-functions.php:48
-msgid "Pounds Sterling (&pound;)"
-msgstr "Sterline Britanniche (&pound;)"
-
-#: ../includes/htl-price-functions.php:49
-msgid "Australian Dollars (&#36;)"
-msgstr "Dollari Australiani (&#36;)"
-
-#: ../includes/htl-price-functions.php:50
-msgid "Brazilian Real (R&#36;)"
-msgstr "Real Brasiliani (R&#36;)"
-
-#: ../includes/htl-price-functions.php:51
-msgid "Canadian Dollars (&#36;)"
-msgstr "Dollari Canadesi (&#36;)"
-
-#: ../includes/htl-price-functions.php:52
-msgid "Czech Koruna"
-msgstr "Corone Ceche"
-
-#: ../includes/htl-price-functions.php:53
-msgid "Danish Krone"
-msgstr "Corone Danesi"
-
-#: ../includes/htl-price-functions.php:54
-msgid "Hong Kong Dollar (&#36;)"
-msgstr "Dollari di Hong Kong (&#36;)"
-
-#: ../includes/htl-price-functions.php:55
-msgid "Hungarian Forint"
-msgstr "Fiorino Ungherese"
-
-#: ../includes/htl-price-functions.php:56
-msgid "Israeli Shekel (&#8362;)"
-msgstr "Shekel Israeliani (&#8362;)"
-
-#: ../includes/htl-price-functions.php:57
-msgid "Japanese Yen (&yen;)"
-msgstr "Yen Giapponesi (&yen;)"
-
-#: ../includes/htl-price-functions.php:58
-msgid "Malaysian Ringgits"
-msgstr "Ringgit Malesi"
-
-#: ../includes/htl-price-functions.php:59
-msgid "Mexican Peso (&#36;)"
-msgstr "Pesos Messicani (&#36;)"
-
-#: ../includes/htl-price-functions.php:60
-msgid "New Zealand Dollar (&#36;)"
-msgstr "Dollari Neozelandesi (&#36;)"
-
-#: ../includes/htl-price-functions.php:61
-msgid "Norwegian Krone"
-msgstr "Corone Norvegesi"
-
-#: ../includes/htl-price-functions.php:62
-msgid "Philippine Pesos"
-msgstr "Pesos Filippini"
-
-#: ../includes/htl-price-functions.php:63
-msgid "Polish Zloty"
-msgstr "Zloty Polacchi"
-
-#: ../includes/htl-price-functions.php:64
-msgid "Singapore Dollar (&#36;)"
-msgstr "Dollari di Singapore (&#36;)"
-
-#: ../includes/htl-price-functions.php:65
-msgid "Swedish Krona"
-msgstr "Corone Svedesi"
-
-#: ../includes/htl-price-functions.php:66
-msgid "Swiss Franc"
-msgstr "Franchi Svizzeri"
-
-#: ../includes/htl-price-functions.php:67
-msgid "Taiwan New Dollars"
-msgstr "Nuovi Dollari di Taiwan"
-
-#: ../includes/htl-price-functions.php:68
-msgid "Thai Baht (&#3647;)"
-msgstr "Baht Tailandesi"
-
-#: ../includes/htl-price-functions.php:69
-msgid "Indian Rupee (&#8377;)"
-msgstr "Rupie Indiane"
-
-#: ../includes/htl-price-functions.php:70
-msgid "Turkish Lira (&#8378;)"
-msgstr "Lire Turche (&#8378;)"
-
-#: ../includes/htl-price-functions.php:71
-msgid "Russian Rubles"
-msgstr "Rublo Russo"
-
-#: ../includes/htl-reservation-functions.php:61
-msgid "Invalid reservation status"
-msgstr "Stato di prenotazione non valido"
-
-#: ../includes/htl-reservation-functions.php:103
-msgid "Invalid reservation ID"
-msgstr "ID prenotazione non valido"
-
-#: ../includes/htl-reservation-functions.php:118
-msgctxt "Reservation status"
-msgid "Pending"
-msgstr "In sospeso"
-
-#: ../includes/htl-reservation-functions.php:360
-msgid "Time limit reached."
-msgstr "Raggiunto limite di tempo"
-
-#: ../includes/htl-reservation-functions.php:396,
-#: ../includes/htl-reservation-functions.php:398
-msgid "Check-out date reached."
-msgstr "Data check-out raggiunta."
-
-#: ../includes/htl-room-functions.php:44
-msgid "Placeholder"
-msgstr "Segnaposto"
-
-#: ../includes/htl-room-functions.php:104
-msgid "Please check your dates."
-msgstr "Si prega di verificare le date."
-
-#: ../includes/htl-room-functions.php:565
-msgid "%s nights minimum stay and %s nights maximum stay"
-msgstr "Soggiorno minimo di %s notti e massimo %s notti."
-
-#: ../includes/htl-room-functions.php:567
-msgid "%s nights minimum stay"
-msgstr "Soggiorno minimo di %s notti"
-
-#: ../includes/htl-room-functions.php:569
-msgid "%s night maximum stay"
-msgid_plural "%s nights maximum stay"
-msgstr[0] "Soggiorno massimo di %s notte"
-msgstr[1] "Soggiorno massimo di %s notti"
-
-#: ../includes/htl-template-functions.php:217
-msgid "Search results for: \"%s\""
-msgstr "Cerca risultati per: \"%s\""
-
-#: ../includes/htl-template-functions.php:220
-msgid "&nbsp;&ndash; Page %s"
-msgstr "&nbsp;&ndash; Pagina %s"
-
-#: ../includes/htl-template-functions.php:228
-msgid "Rooms archive"
-msgstr "Archivio camere"
-
-#: ../includes/htl-template-functions.php:1158
-msgid "required"
-msgstr "richiesto"
-
-#: ../includes/shortcodes/class-htl-shortcode-booking.php:107,
-#: ../templates/emails/guest-invoice.php:119
-msgid "Pay deposit"
-msgstr "Paga deposito"
-
-#: ../includes/shortcodes/class-htl-shortcode-booking.php:111
-msgid ""
-"Hi there! Seems that this reservation does not require a deposit. Please "
-"contact us if you need assistance."
-msgstr ""
-"Salve! sembra che questa prenotazione non richieda un deposito. Contattaci "
-"se hai bisogno di assistenza."
-
-#: ../includes/shortcodes/class-htl-shortcode-booking.php:115
-msgid "Sorry, this reservation is invalid and cannot be paid for."
-msgstr ""
-"Siamo spiacenti, questa prenotazione non è valida e non può essere pagata."
-
-#: ../includes/widgets/class-htl-widget-booking.php:25
-msgid ""
-"Displays current rooms selected and booking details. Visible only in the "
-"\"listing\" and \"booking\" pages."
-msgstr ""
-"Consente di visualizzare le camere selezionate e i dettagli della "
-"prenotazione. Visibile solo nella \"lista delle camere\" e nella pagina di "
-"\"prenotazione\"."
-
-#: ../includes/widgets/class-htl-widget-booking.php:27
-msgid "Hotelier Booking"
-msgstr "Prenotazione Hotelier"
-
-#: ../includes/widgets/class-htl-widget-booking.php:31
-msgid "Your stay"
-msgstr "Il vostro soggiorno"
-
-#: ../includes/widgets/class-htl-widget-booking.php:32,
-#: ../includes/widgets/class-htl-widget-room-search.php:30,
-#: ../includes/widgets/class-htl-widget-rooms-filter.php:30,
-#: ../includes/widgets/class-htl-widget-rooms.php:30
-msgid "Title"
-msgstr "Titolo"
-
-#: ../includes/widgets/class-htl-widget-booking.php:63
-msgid "Modify"
-msgstr "Modifica"
-
-#: ../includes/widgets/class-htl-widget-booking.php:108,
-#: ../templates/booking/reservation-table.php:47,
-#: ../templates/emails/email-reservation-items.php:26,
-#: ../templates/emails/plain/email-reservation-items.php:23,
-#: ../templates/reservation/item.php:25
-msgid "Rate: %s"
-msgstr "Tariffa: %s"
-
-#: ../includes/widgets/class-htl-widget-room-search.php:23
-msgid "A search box for rooms only."
-msgstr "Una casella di ricerca per le sole camere."
-
-#: ../includes/widgets/class-htl-widget-room-search.php:25
-msgid "Hotelier Room Search"
-msgstr "Hotelier Ricerca Camere"
-
-#: ../includes/widgets/class-htl-widget-room-search.php:52
-msgid "Search for:"
-msgstr "Cerca per:"
-
-#: ../includes/widgets/class-htl-widget-room-search.php:53
-msgctxt "placeholder"
-msgid "Search rooms&hellip;"
-msgstr "Ricerca camere&hellip;"
-
-#: ../includes/widgets/class-htl-widget-room-search.php:53
-msgctxt "label"
-msgid "Search for:"
-msgstr "Cerca per:"
-
-#: ../includes/widgets/class-htl-widget-room-search.php:54
-msgctxt "submit button"
-msgid "Search"
-msgstr "Cerca"
-
-#: ../includes/widgets/class-htl-widget-rooms-filter.php:23
-msgid ""
-"Displays a custom filter which lets you narrow down the list of rooms. "
-"Visible only in the \"listing\" page."
-msgstr ""
-"Visualizza un filtro personalizzato che consente di restringere l'elenco "
-"delle camere. Visibile solo nella \"lista delle camere\"."
-
-#: ../includes/widgets/class-htl-widget-rooms-filter.php:25
-msgid "Hotelier Rooms Filter"
-msgstr "Hotelier Filtro Camere"
-
-#: ../includes/widgets/class-htl-widget-rooms-filter.php:29
-msgid "Refine results"
-msgstr "Restringi i risultati"
-
-#: ../includes/widgets/class-htl-widget-rooms-filter.php:35
-msgid "Max guests (type \"0\" to hide this filter)"
-msgstr "Massimo di ospiti (digita \"0\" per nascondere questo filtro)"
-
-#: ../includes/widgets/class-htl-widget-rooms-filter.php:40
-msgid "Max children (type \"0\" to hide this filter)"
-msgstr "Massimo di bambini (digita \"0\" per nascondere questo filtro)"
-
-#: ../includes/widgets/class-htl-widget-rooms-filter.php:107
-msgid "Room type"
-msgstr "Tipologia di camera"
-
-#: ../includes/widgets/class-htl-widget-rooms-filter.php:153
-msgid "Room rate"
-msgstr "Tariffa camera"
-
-#: ../includes/widgets/class-htl-widget-rooms-filter.php:241
-msgid "Children"
-msgstr "Bambini"
-
-#: ../includes/widgets/class-htl-widget-rooms.php:23
-msgid "Display a list of rooms on your site."
-msgstr "Visualizzare un elenco di camere sul tuo sito."
-
-#: ../includes/widgets/class-htl-widget-rooms.php:25
-msgid "Hotelier Rooms"
-msgstr "Hotelier Camere"
-
-#: ../includes/widgets/class-htl-widget-rooms.php:38
-msgid "Number of rooms to show"
-msgstr "Numero di camere da mostrare"
-
-#: ../includes/widgets/class-htl-widget-rooms.php:43
-msgid "Order by?"
-msgstr "Ordina per?"
-
-#: ../includes/widgets/class-htl-widget-rooms.php:46
-msgid "Category"
-msgstr "Categoria"
-
-#: ../includes/widgets/class-htl-widget-rooms.php:47
-msgid "IDs"
-msgstr "IDs"
-
-#: ../includes/widgets/class-htl-widget-rooms.php:52
-msgid "Category IDs"
-msgstr "ID categorie"
-
-#: ../includes/widgets/class-htl-widget-rooms.php:54
-msgid ""
-"List of category IDs separated by commas (eg. 1,5,8). Works only when the "
-"order type is set to \"Category\""
-msgstr ""
-"Elenco di ID di categorie separati da virgole (ad es. 1,5,8). Funziona solo "
-"quando il tipo di ordine è impostato su \"Categoria\""
-
-#: ../includes/widgets/class-htl-widget-rooms.php:58
-msgid "Room IDs"
-msgstr "ID camere"
-
-#: ../includes/widgets/class-htl-widget-rooms.php:60
-msgid ""
-"List of room IDs separated by commas (eg. 1,5,8). Works only when the order "
-"type is set to \"IDs\""
-msgstr ""
-"Elenco di ID di camere separati da virgole (ad es. 1,5,8). Funziona solo "
-"quando il tipo di ordine è impostato su \"IDs\""
-
-#: ../templates/archive/content/room-more-button.php:18
-msgid "View room details"
-msgstr "Vedi dettagli camera"
 
 #: ../templates/booking/cart-errors.php:20
 msgid ""
@@ -3149,10 +3312,10 @@ msgstr "Deposito dovuto dopo la conferma:"
 #: ../templates/emails/guest-confirmed-reservation.php:103,
 #: ../templates/emails/guest-invoice.php:113,
 #: ../templates/emails/guest-request-received.php:103,
+#: ../templates/reservation/reservation-table.php:64,
 #: ../templates/emails/plain/guest-confirmed-reservation.php:48,
 #: ../templates/emails/plain/guest-invoice.php:55,
-#: ../templates/emails/plain/guest-request-received.php:48,
-#: ../templates/reservation/reservation-table.php:64
+#: ../templates/emails/plain/guest-request-received.php:48
 msgid ""
 "This reservation includes a non-cancellable and non-refundable room. You "
 "will be charged the total price if you cancel your booking."
@@ -3216,8 +3379,8 @@ msgid "You have received a reservation from %s."
 msgstr "Hai ricevuto una prenotazione da %s."
 
 #: ../templates/emails/email-guest-address.php:19,
-#: ../templates/emails/plain/email-guest-address.php:16,
-#: ../templates/reservation/guest-details.php:53
+#: ../templates/reservation/guest-details.php:53,
+#: ../templates/emails/plain/email-guest-address.php:16
 msgid "Guest address"
 msgstr "Indirizzo ospite"
 
@@ -3275,6 +3438,124 @@ msgstr ""
 "Grazie, la tua richiesta di prenotazione è stata ricevuta ed è attualmente "
 "in fase di elaborazione. I dati della prenotazione sono riportati di seguito "
 "per il vostro riferimento."
+
+#: ../templates/global/datepicker.php:25,
+#: ../templates/single-room/rate/rate-button.php:22
+msgid "Check availability"
+msgstr "Verifica disponibilità"
+
+#: ../templates/global/quantity-input.php:19
+msgid "Nr. rooms"
+msgstr "Nr. camere"
+
+#: ../templates/global/quantity-input.php:20
+msgctxt "Room quantity input tooltip"
+msgid "Qty"
+msgstr "Quantità"
+
+#: ../templates/loop/no-rooms-found.php:18
+msgid "No rooms were found matching your selection."
+msgstr "Non è stata trovata nessuna camera corrispondente alla tua selezione."
+
+#: ../templates/loop/pagination.php:26
+msgid "Posts navigation"
+msgstr "Navigazione elenco degli articoli"
+
+#: ../templates/reservation/cancel-reservation.php:19
+msgid "Cancel reservation"
+msgstr "Annulla prenotazione"
+
+#: ../templates/reservation/guest-details.php:27
+msgid "Name:"
+msgstr "Nome:"
+
+#: ../templates/reservation/reservation-details.php:20
+msgid "Reservation number:"
+msgstr "Numero di prenotazione:"
+
+#: ../templates/reservation/reservation-details.php:24
+msgid "Date:"
+msgstr "Data:"
+
+#: ../templates/reservation/reservation-details.php:40
+msgid "Special requests:"
+msgstr "Richieste speciali:"
+
+#: ../templates/reservation/reservation-table.php:23
+msgid "Reservation details"
+msgstr "Dettagli della prenotazione"
+
+#: ../templates/room-list/no-rooms-available.php:18
+msgid ""
+"We are sorry, there are no rooms available on your requested dates. Please "
+"try again with some different dates."
+msgstr ""
+"Siamo spiacenti, non ci sono camere disponibili nelle date richieste. "
+"Riprova con date differenti."
+
+#: ../templates/room-list/reserve-button.php:26
+msgid "Reserve"
+msgstr "Prenota"
+
+#: ../templates/room-list/room-content.php:129
+msgid "Show rates"
+msgstr "Mostra tariffe"
+
+#: ../templates/room-list/room-content.php:129,
+#: ../templates/room-list/room-content.php:129
+msgid "Hide rates"
+msgstr "Nascondi tariffe"
+
+#: ../templates/room-list/selected-nights.php:22
+msgctxt "selected_nights"
+msgid "%s-night stay"
+msgid_plural "%s-nights stay"
+msgstr[0] "Soggiorno di %s notte"
+msgstr[1] "Soggiorno di %s notti"
+
+#: ../templates/single-room/conditions.php:26
+msgid "Room conditions"
+msgstr "Condizioni camera"
+
+#: ../templates/single-room/deposit.php:21,
+#: ../templates/room-list/content/deposit.php:21,
+#: ../templates/single-room/rate/rate-deposit.php:19,
+#: ../templates/room-list/content/rate/rate-deposit.php:19
+msgid "Deposit required"
+msgstr "Deposito richiesto"
+
+#: ../templates/single-room/facilities.php:24
+msgid "Facilities"
+msgstr "Servizi"
+
+#: ../templates/single-room/gallery.php:75
+msgid "View room gallery"
+msgstr "Guarda la galleria della camera"
+
+#: ../templates/single-room/meta.php:22
+msgid "Room details"
+msgstr "Dettagli della camera"
+
+#: ../templates/single-room/meta.php:32,
+#: ../templates/room-list/content/meta.php:23
+msgid "Room size:"
+msgstr "Dimensioni camera:"
+
+#: ../templates/single-room/price.php:25
+msgid "See available rates"
+msgstr "Vedi tariffe disponibili"
+
+#: ../templates/single-room/related.php:20
+msgid "Related rooms"
+msgstr "Camere correlate"
+
+#: ../templates/single-room/room-rates.php:28
+msgid "Available rates"
+msgstr "Tariffe disponibili"
+
+#: ../templates/archive/content/room-more-button.php:18
+msgid "View room details"
+msgstr "Vedi dettagli camera"
 
 #: ../templates/emails/plain/admin-cancelled-reservation.php:26,
 #: ../templates/emails/plain/admin-new-reservation.php:26,
@@ -3340,52 +3621,6 @@ msgstr ""
 "Ciao %s, la prenotazione è stata creata per te su %s. Per pagare la "
 "prenotazione si prega di utilizzare il seguente link: %s"
 
-#: ../templates/global/datepicker.php:25,
-#: ../templates/single-room/rate/rate-button.php:22
-msgid "Check availability"
-msgstr "Verifica disponibilità"
-
-#: ../templates/global/quantity-input.php:19
-msgid "Nr. rooms"
-msgstr "Nr. camere"
-
-#: ../templates/global/quantity-input.php:20
-msgctxt "Room quantity input tooltip"
-msgid "Qty"
-msgstr "Quantità"
-
-#: ../templates/loop/no-rooms-found.php:18
-msgid "No rooms were found matching your selection."
-msgstr "Non è stata trovata nessuna camera corrispondente alla tua selezione."
-
-#: ../templates/loop/pagination.php:26
-msgid "Posts navigation"
-msgstr "Navigazione elenco degli articoli"
-
-#: ../templates/reservation/cancel-reservation.php:19
-msgid "Cancel reservation"
-msgstr "Annulla prenotazione"
-
-#: ../templates/reservation/guest-details.php:27
-msgid "Name:"
-msgstr "Nome:"
-
-#: ../templates/reservation/reservation-details.php:20
-msgid "Reservation number:"
-msgstr "Numero di prenotazione:"
-
-#: ../templates/reservation/reservation-details.php:24
-msgid "Date:"
-msgstr "Data:"
-
-#: ../templates/reservation/reservation-details.php:40
-msgid "Special requests:"
-msgstr "Richieste speciali:"
-
-#: ../templates/reservation/reservation-table.php:23
-msgid "Reservation details"
-msgstr "Dettagli della prenotazione"
-
 #: ../templates/room-list/content/add-to-cart.php:44,
 #: ../templates/room-list/content/rate/rate-add-to-cart.php:42
 msgctxt "book now button text: singular"
@@ -3398,25 +3633,13 @@ msgctxt "book now button text: plural"
 msgid "rooms selected"
 msgstr "camere selezionate"
 
-#: ../templates/room-list/content/deposit.php:21,
-#: ../templates/room-list/content/rate/rate-deposit.php:19,
-#: ../templates/single-room/deposit.php:21,
-#: ../templates/single-room/rate/rate-deposit.php:19
-msgid "Deposit required"
-msgstr "Deposito richiesto"
-
 #: ../templates/room-list/content/facilities.php:24
 msgid "Room facilities:"
-msgstr "Servizi della camera"
+msgstr "Servizi della camera:"
 
 #: ../templates/room-list/content/max-guests.php:27
 msgid "Recommended for %s adult(s) and %s child(ren)"
 msgstr "Consigliato per %s adulti e %s bambini"
-
-#: ../templates/room-list/content/meta.php:23,
-#: ../templates/single-room/meta.php:32
-msgid "Room size:"
-msgstr "Dimensioni camera:"
 
 #: ../templates/room-list/content/not-available-info.php:24
 msgid "The room is not available for this date"
@@ -3427,8 +3650,8 @@ msgstr "La camera non è disponibile in questa data"
 msgid "Prices are per room"
 msgstr "I prezzi si intendono per camera"
 
-#: ../templates/room-list/content/rate/rate-conditions.php:24,
-#: ../templates/room-list/content/room-conditions.php:26
+#: ../templates/room-list/content/room-conditions.php:26,
+#: ../templates/room-list/content/rate/rate-conditions.php:24
 msgid "Room conditions:"
 msgstr "Condizioni camera:"
 
@@ -3451,65 +3674,9 @@ msgstr "Nascondi dettagli camera"
 msgid "View gallery"
 msgstr "Guarda la galleria"
 
-#: ../templates/room-list/no-rooms-available.php:18
-msgid ""
-"We are sorry, there are no rooms available on your requested dates. Please "
-"try again with some different dates."
-msgstr ""
-"Siamo spiacenti, non ci sono camere disponibili nelle date richieste. "
-"Riprova con date differenti."
-
-#: ../templates/room-list/reserve-button.php:26
-msgid "Reserve"
-msgstr "Prenota"
-
-#: ../templates/room-list/room-content.php:129
-msgid "Show rates"
-msgstr "Mostra tariffe"
-
-#: ../templates/room-list/room-content.php:129,
-#: ../templates/room-list/room-content.php:129
-msgid "Hide rates"
-msgstr "Nascondi tariffe"
-
-#: ../templates/room-list/selected-nights.php:22
-msgctxt "selected_nights"
-msgid "%s-night stay"
-msgid_plural "%s-nights stay"
-msgstr[0] "Soggiorno di %s notte"
-msgstr[1] "Soggiorno di %s notti"
-
-#: ../templates/single-room/conditions.php:26
-msgid "Room conditions"
-msgstr "Condizioni camera"
-
-#: ../templates/single-room/facilities.php:24
-msgid "Facilities"
-msgstr "Servizi"
-
-#: ../templates/single-room/gallery.php:75
-msgid "View room gallery"
-msgstr "Guarda la galleria della camera"
-
-#: ../templates/single-room/meta.php:22
-msgid "Room details"
-msgstr "Dettagli della camera"
-
-#: ../templates/single-room/price.php:25
-msgid "See available rates"
-msgstr "Vedi tariffe disponibili"
-
 #: ../templates/single-room/rate/rate-conditions.php:24
 msgid "Rate conditions:"
 msgstr "Condizioni tariffa:"
-
-#: ../templates/single-room/related.php:20
-msgid "Related rooms"
-msgstr "Camere correlate"
-
-#: ../templates/single-room/room-rates.php:28
-msgid "Available rates"
-msgstr "Tariffe disponibili"
 
 #~ msgid ""
 #~ "Displays a custom filter which lets you narrow down the list of rooms "
