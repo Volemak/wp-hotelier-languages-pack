@@ -18,15 +18,15 @@ msgstr ""
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.1\n"
+"X-Generator: Poedit 2.0\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: ../hotelier.php:91, ../hotelier.php:98,
 #: ../includes/class-htl-booking.php:89, ../includes/class-htl-booking.php:96,
 #: ../includes/class-htl-emails.php:47, ../includes/class-htl-emails.php:54,
 #: ../includes/class-htl-payment-gateways.php:51,
-#: ../includes/class-htl-payment-gateways.php:58
+#: ../includes/class-htl-payment-gateways.php:58, ../wp-hotelier.php:91,
+#: ../wp-hotelier.php:98
 msgid "Cheatin&#8217; huh?"
 msgstr "Stai barando eh?"
 
@@ -831,7 +831,8 @@ msgid "Reservation received"
 msgstr "Prenotazione ricevuta"
 
 #: ../includes/class-htl-reservation.php:333,
-#: ../includes/class-htl-reservation.php:339
+#: ../includes/class-htl-reservation.php:339,
+#: ../includes/admin/settings/class-htl-admin-settings.php:65
 msgid "Hotelier"
 msgstr "Hotelier"
 
@@ -1179,15 +1180,15 @@ msgstr ""
 "Questa prenotazione non può essere ripristinata perché una o più camere non "
 "sono più disponibili in quelle date."
 
-#: ../includes/admin/class-htl-admin-scripts.php:99
+#: ../includes/admin/class-htl-admin-scripts.php:104
 msgid "Please enter in decimal (%s) format without thousand separators."
 msgstr "Inserisci in formato decimale (%s) senza separatori delle migliaia."
 
-#: ../includes/admin/class-htl-admin-scripts.php:100
+#: ../includes/admin/class-htl-admin-scripts.php:105
 msgid "Please enter in a value less than the regular price."
 msgstr "Inserisci un valore minore del prezzo base."
 
-#: ../includes/admin/class-htl-admin-scripts.php:114
+#: ../includes/admin/class-htl-admin-scripts.php:119
 msgid ""
 "Are you sure you wish to proceed with this charge? This action cannot be "
 "undone."
@@ -2733,18 +2734,6 @@ msgstr ""
 msgid "Test email from %s"
 msgstr "Email di prova da %s"
 
-#: ../includes/admin/settings/class-htl-admin-settings-fields.php:774
-msgid ""
-"This test email proves that your WordPress installation at %s can send "
-"emails.\n"
-"\n"
-"Sent: %s"
-msgstr ""
-"Questa email di prova certifica che la tua installazione di WordPress in %s "
-"è in grado di inviare email.\n"
-"\n"
-"Data invio: %s"
-
 #: ../includes/admin/settings/class-htl-admin-settings-fields.php:778
 msgid ""
 "Email sent. This does not mean it has been delivered. See %s in the Codex "
@@ -2837,10 +2826,6 @@ msgid ""
 msgstr ""
 "Per consentire i log, rendete <code>%s</code> accessibile in scrittura o "
 "definite un valore di <code>HTL_LOG_DIR</code> personalizzato."
-
-#: ../includes/admin/settings/class-htl-admin-settings.php:65
-msgid "Easy WP Hotelier"
-msgstr "Easy WP Hotelier"
 
 #: ../includes/admin/settings/class-htl-admin-settings.php:67
 msgid "Easy WP Hotelier Settings"
@@ -3677,6 +3662,20 @@ msgstr "Guarda la galleria"
 #: ../templates/single-room/rate/rate-conditions.php:24
 msgid "Rate conditions:"
 msgstr "Condizioni tariffa:"
+
+#~ msgid ""
+#~ "This test email proves that your WordPress installation at %s can send "
+#~ "emails.\n"
+#~ "\n"
+#~ "Sent: %s"
+#~ msgstr ""
+#~ "Questa email di prova certifica che la tua installazione di WordPress in "
+#~ "%s è in grado di inviare email.\n"
+#~ "\n"
+#~ "Data invio: %s"
+
+#~ msgid "Easy WP Hotelier"
+#~ msgstr "Easy WP Hotelier"
 
 #~ msgid ""
 #~ "Displays a custom filter which lets you narrow down the list of rooms "

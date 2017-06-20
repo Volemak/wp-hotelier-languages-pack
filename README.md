@@ -4,4 +4,4 @@ This is a temporary repository for the Easy WP Hotelier languages packages. When
 
 ## How to install a language pack
 
-Download the repository and upload the files of your language (for example `hotelier-it_IT.po` and `hotelier-it_IT.mo`) in `wp-content/languages/wp-hotelier/` (create the folders if they don't exist).
+Download the repository and upload the files of your language (for example `wp-hotelier-it_IT.po` and `wp-hotelier-it_IT.mo`) in `wp-content/languages/wp-hotelier/` (create the folders if they don't exist).
