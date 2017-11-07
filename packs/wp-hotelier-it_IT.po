@@ -22,11 +22,11 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
+#: ../hotelier.php:91, ../hotelier.php:98,
 #: ../includes/class-htl-booking.php:89, ../includes/class-htl-booking.php:96,
 #: ../includes/class-htl-emails.php:47, ../includes/class-htl-emails.php:54,
 #: ../includes/class-htl-payment-gateways.php:51,
-#: ../includes/class-htl-payment-gateways.php:58, ../wp-hotelier.php:91,
-#: ../wp-hotelier.php:98
+#: ../includes/class-htl-payment-gateways.php:58
 msgid "Cheatin&#8217; huh?"
 msgstr "Stai barando eh?"
 
@@ -72,7 +72,7 @@ msgctxt "placeholder"
 msgid "Email address"
 msgstr "Indirizzo email"
 
-#: ../includes/class-htl-booking.php:284, ../includes/class-htl-emails.php:257,
+#: ../includes/class-htl-booking.php:284, ../includes/class-htl-emails.php:278,
 #: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:57,
 #: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:260
 msgid "Telephone"
@@ -153,7 +153,7 @@ msgstr "Orario relativo al fuso orario di %s"
 msgid "I don't know"
 msgstr "Non lo so"
 
-#: ../includes/class-htl-booking.php:369, ../includes/class-htl-emails.php:219,
+#: ../includes/class-htl-booking.php:369, ../includes/class-htl-emails.php:220,
 #: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:302,
 #: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:348
 msgid "Special requests"
@@ -269,22 +269,29 @@ msgstr ""
 "vostra prenotazione. Si prega di selezionare un'altra stanza o di ridurre la "
 "quantità e riprovare. Ci scusiamo per gli eventuali disagi causati."
 
-#: ../includes/class-htl-emails.php:220,
+#: ../includes/class-htl-emails.php:221,
 #: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:303,
 #: ../templates/reservation/reservation-details.php:41
 msgid "None"
 msgstr "Nessuno"
 
-#: ../includes/class-htl-emails.php:243
+#: ../includes/class-htl-emails.php:240,
+#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:93,
+#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:292,
+#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:311
+msgid "Estimated arrival time"
+msgstr "Arrivo previsto stimato"
+
+#: ../includes/class-htl-emails.php:264
 msgid "Name"
 msgstr "Nome"
 
-#: ../includes/class-htl-emails.php:250,
+#: ../includes/class-htl-emails.php:271,
 #: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:253
 msgid "Email"
 msgstr "Email"
 
-#: ../includes/class-htl-emails.php:266,
+#: ../includes/class-htl-emails.php:287,
 #: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:235,
 #: ../includes/admin/new-reservation/views/html-admin-new-reservation.php:71,
 #: ../templates/booking/form-guest-details.php:21,
@@ -293,7 +300,7 @@ msgstr "Email"
 msgid "Guest details"
 msgstr "Dati ospite"
 
-#: ../includes/class-htl-emails.php:266
+#: ../includes/class-htl-emails.php:287
 msgid "Your details"
 msgstr "I tuoi dettagli"
 
@@ -832,6 +839,7 @@ msgstr "Prenotazione ricevuta"
 
 #: ../includes/class-htl-reservation.php:333,
 #: ../includes/class-htl-reservation.php:339,
+#: ../includes/admin/class-htl-admin-functions.php:50,
 #: ../includes/admin/settings/class-htl-admin-settings.php:65
 msgid "Hotelier"
 msgstr "Hotelier"
@@ -848,34 +856,42 @@ msgstr ""
 msgid "Reservation status changed from %s to %s."
 msgstr "Stato prenotazione cambiato da %s a %s."
 
-#: ../includes/class-htl-reservation.php:842
+#: ../includes/class-htl-reservation.php:668
+msgid "Reservation marked as paid."
+msgstr "Prenotazione contrassegnata come pagata."
+
+#: ../includes/class-htl-reservation.php:680
+msgid "Reservation marked as unpaid."
+msgstr "Prenotazione contrassegnata come non pagata."
+
+#: ../includes/class-htl-reservation.php:844
 msgid "Subtotal:"
 msgstr "Totale parziale:"
 
-#: ../includes/class-htl-reservation.php:849
+#: ../includes/class-htl-reservation.php:851
 msgid "Paid Deposit:"
 msgstr "Deposito versato:"
 
-#: ../includes/class-htl-reservation.php:856
+#: ../includes/class-htl-reservation.php:858
 msgid "Required Deposit:"
 msgstr "Deposito richiesto:"
 
-#: ../includes/class-htl-reservation.php:863
+#: ../includes/class-htl-reservation.php:865
 msgid "Payment Method:"
 msgstr "Metodo di pagamento:"
 
-#: ../includes/class-htl-reservation.php:871
+#: ../includes/class-htl-reservation.php:873
 msgid "Total Due:"
 msgstr "Totale dovuto:"
 
-#: ../includes/class-htl-reservation.php:889,
-#: ../includes/class-htl-reservation.php:901,
+#: ../includes/class-htl-reservation.php:891,
+#: ../includes/class-htl-reservation.php:903,
 #: ../templates/booking/reservation-table.php:84,
 #: ../templates/booking/reservation-table.php:107
 msgid "Total:"
 msgstr "Totale:"
 
-#: ../includes/class-htl-reservation.php:894
+#: ../includes/class-htl-reservation.php:896
 msgid "Deposit Due Now:"
 msgstr "Deposito dovuto ora:"
 
@@ -1101,12 +1117,12 @@ msgid "View Calendar"
 msgstr "Visualizza calendario"
 
 #: ../includes/admin/class-htl-admin-menus.php:56
-msgid "Easy WP Hotelier Extensions & Themes"
-msgstr "Easy WP Hotelier Estensioni & Temi"
+msgid "Easy WP Hotelier Extensions"
+msgstr "Estensioni Easy WP Hotelier"
 
 #: ../includes/admin/class-htl-admin-menus.php:56
-msgid "Extensions & Themes"
-msgstr "Estensioni & Temi"
+msgid "Extensions"
+msgstr "Estensioni"
 
 #: ../includes/admin/class-htl-admin-menus.php:63,
 #: ../includes/admin/settings/class-htl-admin-settings.php:136,
@@ -1180,15 +1196,15 @@ msgstr ""
 "Questa prenotazione non può essere ripristinata perché una o più camere non "
 "sono più disponibili in quelle date."
 
-#: ../includes/admin/class-htl-admin-scripts.php:104
+#: ../includes/admin/class-htl-admin-scripts.php:106
 msgid "Please enter in decimal (%s) format without thousand separators."
 msgstr "Inserisci in formato decimale (%s) senza separatori delle migliaia."
 
-#: ../includes/admin/class-htl-admin-scripts.php:105
+#: ../includes/admin/class-htl-admin-scripts.php:107
 msgid "Please enter in a value less than the regular price."
 msgstr "Inserisci un valore minore del prezzo base."
 
-#: ../includes/admin/class-htl-admin-scripts.php:119
+#: ../includes/admin/class-htl-admin-scripts.php:121
 msgid ""
 "Are you sure you wish to proceed with this charge? This action cannot be "
 "undone."
@@ -1514,12 +1530,6 @@ msgstr "Indirizzo 1"
 #: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:65
 msgid "Address 2"
 msgstr "Indirizzo 2"
-
-#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:93,
-#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:292,
-#: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:311
-msgid "Estimated arrival time"
-msgstr "Arrivo previsto stimato"
 
 #: ../includes/admin/meta-boxes/class-htl-meta-box-reservation-data.php:176,
 #: ../includes/gateways/paypal-standard/includes/class-htl-gateway-paypal-request.php:123
@@ -2221,12 +2231,12 @@ msgstr "Mantenere prenotazione (minuti)"
 msgid ""
 "Hold reservation (for unpaid reservations that require a deposit) for \"XX\" "
 "minutes. When this limit is reached, the pending reservation will be "
-"cancelled. Type \"0\" to disable. Reservations created by admin are not "
+"cancelled. Type \"0\" to disable. Reservations created by admin will be not "
 "cancelled."
 msgstr ""
 "Mantenere la prenotazione (le prenotazioni non pagate che richiedono un "
 "deposito) per \"XX\" minuti. Quando viene raggiunto questo limite, la "
-"prenotazione viene annullata. Digita \"0\" per disabilitare. Prenotazioni "
+"prenotazione viene annullata. Digita \"0\" per disabilitare. Le prenotazioni "
 "create dall'amministratore non vengono annullate."
 
 #: ../includes/admin/settings/class-htl-admin-settings-default.php:471
@@ -2534,8 +2544,8 @@ msgid "Server settings & info"
 msgstr "Impostazioni server & info"
 
 #: ../includes/admin/settings/class-htl-admin-settings-default.php:793
-msgid "Hotelier version"
-msgstr "Versione Hotelier"
+msgid "Easy WP Hotelier version"
+msgstr "Impostazioni Easy WP Hotelier"
 
 #: ../includes/admin/settings/class-htl-admin-settings-default.php:798
 msgid "Theme name"
@@ -3662,6 +3672,9 @@ msgstr "Guarda la galleria"
 #: ../templates/single-room/rate/rate-conditions.php:24
 msgid "Rate conditions:"
 msgstr "Condizioni tariffa:"
+
+#~ msgid "Hotelier version"
+#~ msgstr "Versione Hotelier"
 
 #~ msgid ""
 #~ "This test email proves that your WordPress installation at %s can send "
